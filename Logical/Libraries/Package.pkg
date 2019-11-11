@@ -16,5 +16,6 @@
     <Object Type="Library" Language="binary" Description="The SYS_LIB library contains functions for memory management and operating system manipulation as well as hardware-specific functions.">sys_lib</Object>
     <Object Type="Library" Language="binary" Description="ACOPOS Simulation">Acp10sim</Object>
     <Object Type="Library" Language="ANSIC">MotorCtrl</Object>
+    <Object Type="Library" Language="binary" Description="The AsIOTime library is used to generate time stamps based on system time of the I/O system.">AsIOTime</Object>
   </Objects>
 </Package>

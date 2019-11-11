@@ -8,5 +8,6 @@
     <File>FB_Regulator.c</File>
     <File>FB_Motor.c</File>
     <File>FB_Integrator.c</File>
+    <File>FB_Axis.c</File>
   </Files>
 </Library>

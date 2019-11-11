@@ -1,0 +1,30 @@
+Mon Nov 11 22:39:53 2019
+COPYRIGHT (C) B&R Industrial Automation GmbH
+
+Mon Nov 11 22:39:53 2019
+No ARsim registration found!
+
+Mon Nov 11 22:39:53 2019
+InstanceName: 01d598c7ca2083a0
+
+Mon Nov 11 22:39:53 2019
+WorkingDirectory: C:\Projects\Lab3\Temp\Simulation\Real\4PP065_0571_P74\
+
+Mon Nov 11 22:39:53 2019
+COMMAND_COLDSTART
+
+Mon Nov 11 22:39:55 2019
+Version: D4.52
+
+Mon Nov 11 22:39:57 2019
+COMMAND_TERMINATE
+
+Mon Nov 11 22:39:57 2019
+COMMAND_COLDSTART
+
+Mon Nov 11 22:39:59 2019
+Version: D4.52
+
+Mon Nov 11 22:47:44 2019
+COMMAND_TERMINATE
+

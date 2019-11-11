@@ -5,11 +5,12 @@
     <Connector Name="IF5">
       <Parameter ID="ActivateDevice" Value="1" />
     </Connector>
-    <Parameter ID="ConfigurationID" Value="Lab3_Real" />
+    <Parameter ID="ConfigurationID" Value="lab_BR" />
     <Parameter ID="TimerDeviceType" Value="EPLX2X" />
     <Parameter ID="TimerDevice" Value="4PP065_0571_P74.IF4" />
     <Parameter ID="TaskClassIdleTime" Value="2000" />
     <Parameter ID="Cyclic1Output" Value="1" />
+    <Parameter ID="Cyclic4Duration" Value="2000" />
   </Module>
   <Module Name="8I64xxxxxxx.00x-1" Type="8I64xxxxxxx.00x-1" Version="1.3.9.1">
     <Connection Connector="X2X1" TargetModule="X20BT9100" TargetConnector="X2X1">

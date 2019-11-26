@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=?>
+<NcMapping NcSwId="Acp10">
+  <NcObject Name="X20SM1436_ncAXIS1" ModuleId="X20SM1436" ModuleAddress="SDC_IF1.ST1" Type="ncAXIS" Channel="1" AcoposSimulation="Off" Disabled="TRUE" ModuleDisabled="FALSE" />
+  <NcObject Name="X20SM1436a_ncAXIS1" ModuleId="X20SM1436a" ModuleAddress="SDC_IF1.ST2" Type="ncAXIS" Channel="1" AcoposSimulation="Off" Disabled="TRUE" ModuleDisabled="FALSE" />
+</NcMapping>

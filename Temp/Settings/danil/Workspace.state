@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=4.5.2.102?>
+<State Top="0" Left="0" Width="0" Height="0" WindowState="Normal" xmlns="http://br-automation.co.at/AS/State">
+  <TextEdit ID="C:\Projects\Lab3\Logical\SDCAxisCtrlX\Main.c" CaretLine="453" CaretColumn="26" FirstVisibleLine="438">
+    <Bookmarks />
+  </TextEdit>
+  <TextEdit ID="C:\Projects\Lab3\Logical\Libraries\MotorCtrl\FB_Axis.c" CaretLine="27" CaretColumn="53" FirstVisibleLine="20">
+    <Bookmarks />
+  </TextEdit>
+</State>

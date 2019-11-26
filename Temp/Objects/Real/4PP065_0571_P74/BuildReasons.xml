@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BuildReasons>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\gui\gui.mak">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\main.c.o">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\sdcaxisctrlx\main.c" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\_bur_pvdef.c.o">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\main.c.o" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\a.out">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\main.c.o" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\sdcaxisctr.ox">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\a.out" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\sdcaxisctr.ox" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\gui.br">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+  <Rule ID="#cpu_tp.mak">
+    <BuildReason>Rule is forced.</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\binaries\real\4pp065_0571_p74\transfer.lst">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr.br" differs.
+</BuildReason>
+  </Rule>
+</BuildReasons>

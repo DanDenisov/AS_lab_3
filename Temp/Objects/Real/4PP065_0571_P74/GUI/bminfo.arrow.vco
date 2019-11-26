@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?AutomationStudio Version=3.0?>
+<Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
+  <Folder Name="Bitmaps">
+    <Folder Name="POBJ">
+      <Object Name="arrow" ClsId="0x306" Version="1" TargetIndex="71" Type="GFX" RefString="Source[local].Bitmap[arrow]">
+        <UInt16 Name="Width">16</UInt16>
+        <UInt16 Name="Height">16</UInt16>
+        <UInt32 Name="BitsPerPixel">8</UInt32>
+        <Byte Name="Transparency">0</Byte>
+        <Byte Name="TargetFormat">1</Byte>
+        <UInt16 Name="Reserved">0</UInt16>
+        <Int32 Name="TransparentColor">0</Int32>
+        <Int32 Name="FillAreas">0</Int32>
+        <Binary Name="BitmapData" Encoding="Base64">Dw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PO/oPDw8PDw8PDw8PDw8P+fX1+w8PDw8PDw8PDw8P/PUAAPX8Dw8PDw8PDw8PDwgAAAAACA8PDw8PDw8PDwf1AAAAAPUHDw8PDw8PDztmCAgICAgIZjsPDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw8PDw==</Binary>
+      </Object>
+    </Folder>
+  </Folder>
+</Intermediate>

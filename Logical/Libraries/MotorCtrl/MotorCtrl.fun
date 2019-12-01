@@ -53,14 +53,14 @@ FUNCTION_BLOCK FB_Axis
 		UserSpeed : INT;
 		endswitch_a_reached : BOOL;
 		endswitch_b_reached : BOOL;
+		counter : INT;
 	END_VAR
 	VAR_OUTPUT
+		SetSpeed : INT;
+		FeedbackSpeed : REAL;
+		pwm_value : INT;
 		reset_error : BOOL;
 		reset_counter : BOOL;
-		pwm_value : INT;
-		counter : INT;
-		FeedbackSpeed : REAL;
-		SetSpeed : INT;
 	END_VAR
 	VAR
 		state : AxisStates;
@@ -69,6 +69,5 @@ FUNCTION_BLOCK FB_Axis
 		MaxSpeed : UINT;
 		Referenced : BOOL;
 		RefSwitchA : BOOL;
-		last_counter : INT;
 	END_VAR
 END_FUNCTION_BLOCK

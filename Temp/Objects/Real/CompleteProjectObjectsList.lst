@@ -330,7 +330,7 @@
     Path="C:\Projects\Lab3\Logical\Libraries\MotorCtrl\MotorCtrl.fun"
     LogicalPath="Libraries.MotorCtrl.MotorCtrl.fun"
     Type="File"
-    LastWriteTime="132196912856930717"
+    LastWriteTime="132197049629201256"
     Private="false" />
   <Object
     Path="C:\Projects\Lab3\Logical\Libraries\MotorCtrl\FB_Regulator.c"
@@ -381,7 +381,7 @@
     Path="C:\Projects\Lab3\Logical\Axis_Xobj\Axis_Xa\Axis_Xa.apt"
     LogicalPath="Axis_Xobj.Axis_Xa.Axis_Xa.apt"
     Type="File"
-    LastWriteTime="132187392860000000"
+    LastWriteTime="132196929929009753"
     Private="false" />
   <Object
     Path="C:\Projects\Lab3\Logical\Axis_Xobj\Axis_Xi\Ax.dob"
@@ -437,7 +437,7 @@
     Path="C:\Projects\Lab3\Physical\Real\Hardware.hw"
     LogicalPath="Real.Hardware.hw"
     Type="File"
-    LastWriteTime="132196882426084565"
+    LastWriteTime="132196930315326870"
     Private="false" />
   <Object
     Path="C:\Projects\Lab3\Physical\Real\Hardware.hwl"

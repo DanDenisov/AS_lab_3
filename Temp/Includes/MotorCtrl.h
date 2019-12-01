@@ -70,17 +70,16 @@ typedef struct FB_Axis
 	/* VAR_INPUT (analog) */
 	float u;
 	signed short UserSpeed;
-	/* VAR_OUTPUT (analog) */
-	signed short pwm_value;
 	signed short counter;
-	float FeedbackSpeed;
+	/* VAR_OUTPUT (analog) */
 	signed short SetSpeed;
+	float FeedbackSpeed;
+	signed short pwm_value;
 	/* VAR (analog) */
 	enum AxisStates state;
 	enum AxisStates prev_state;
 	plcstring StatusString[81];
 	unsigned short MaxSpeed;
-	signed short last_counter;
 	/* VAR_INPUT (digital) */
 	plcbit endswitch_a_reached;
 	plcbit endswitch_b_reached;

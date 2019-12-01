@@ -1,7 +1,7 @@
 SHELL := cmd.exe
 CYGWIN=nontsec
 export PATH := C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Git\cmd;C:\Users\danil\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Common Files\Hilscher GmbH\TLRDecode;C:\Users\danil\AppData\Local\atom\bin;C:\Users\danil\AppData\Local\Microsoft\WindowsApps;C:\Program Files (x86)\Common Files\Hilscher GmbH\TLRDecode;C:\Users\danil\AppData\Local\atom\bin
-export AS_BUILD_MODE := BuildAndTransfer
+export AS_BUILD_MODE := Build
 export AS_VERSION := 4.5.2.102
 export AS_COMPANY_NAME :=  
 export AS_USER_NAME := danil
@@ -34,5 +34,5 @@ export WIN32_AS_INSTALL_PATH := "C:\BrAutomation\AS45"
 
 ProjectMakeFile:
 
-	@'$(AS_BIN_PATH)/BR.AS.AnalyseProject.exe' '$(AS_PROJECT_PATH)/Lab3.apj' -t '$(AS_TEMP_PATH)' -c '$(AS_CONFIGURATION)' -o '$(AS_BINARIES_PATH)'   -sfas -buildMode 'BuildAndTransfer'   
+	@'$(AS_BIN_PATH)/BR.AS.AnalyseProject.exe' '$(AS_PROJECT_PATH)/Lab3.apj' -t '$(AS_TEMP_PATH)' -c '$(AS_CONFIGURATION)' -o '$(AS_BINARIES_PATH)'   -sfas -buildMode 'Build'   
 

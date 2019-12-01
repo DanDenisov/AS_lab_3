@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _LIBRARIES_20191201192953_
-#define _LIBRARIES_20191201192953_
+#ifndef _LIBRARIES_20191201233641_
+#define _LIBRARIES_20191201233641_
 
 __asm__(".section \".plc\"");
 
@@ -765,5 +765,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/MotorCtrl/MotorCtrl.fun\\\" scop
 __asm__(".previous");
 
 
-#endif /* _LIBRARIES_20191201192953_ */
+#endif /* _LIBRARIES_20191201233641_ */
 

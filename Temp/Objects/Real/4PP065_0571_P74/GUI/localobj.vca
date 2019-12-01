@@ -281,9 +281,9 @@
   <Symbol Name="\Projects\GUI\Forms\POBJ" Index="1" Type="PAGE" RefString="Source[local].Page[P1_InitPage]" />
   <Symbol Name="\Projects\GUI\Forms\POBJ" Index="3" Type="PAGE" RefString="Source[local].Page[P3_ModePage]" />
   <Symbol Name="\Projects\GUI\Forms\POBJ" Index="4" Type="PAGE" RefString="Source[local].Page[P4_PathPage]" />
-  <Symbol Name="Source[local].KeySource[VNCServer]" Index="1073741824" Type="KS" RefString="Source[local].KeySource[VNCServer]" />
-  <Symbol Name="Source[local].Driver[DisplaySW]" Index="1073741824" Type="DRV" RefString="Source[local].Driver[DisplaySW]" />
-  <Symbol Name="Source[local].KS[default]" Index="1073741825" Type="KS" RefString="Source[local].KS[default]" />
+  <Symbol Name="Source[local].Driver[DisplayCx300]" Index="1073741824" Type="DRV" RefString="Source[local].Driver[DisplayCx300]" />
+  <Symbol Name="Source[local].Driver[EloTouch]" Index="1073741825" Type="DRV" RefString="Source[local].Driver[EloTouch]" />
+  <Symbol Name="Source[local].KS[default]" Index="1073741824" Type="KS" RefString="Source[local].KS[default]" />
   <Symbol Name="Source[local].KSTable[4PP065.0571-P74]" Index="1073741824" Type="KSTable" RefString="Source[local].KSTable[4PP065.0571-P74]" />
   <Symbol Name="Source[local].Page[P2_HelpPage].Layer[Default].Control[Text_1]" Index="1073741824" Type="CTRL" RefString="Source[local].Page[P2_HelpPage].Layer[Default].Control[Text_1]" />
   <Symbol Name="Source[local].Page[P2_HelpPage].Layer[Default].Control[Text_2]" Index="1073741825" Type="CTRL" RefString="Source[local].Page[P2_HelpPage].Layer[Default].Control[Text_2]" />

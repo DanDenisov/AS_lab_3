@@ -73,6 +73,11 @@
     <Property Name="Platform" Value="Platform.x86.Generic" />
   </Module>
   <Module>
+    <Property Name="Name" Value="vcnet.br" />
+    <Property Name="Version" Value="Core" />
+    <Property Name="Platform" Value="Platform.x86.Generic" />
+  </Module>
+  <Module>
     <Property Name="Name" Value="vcpdpp30.br" />
     <Property Name="Version" Value="Core" />
     <Property Name="Platform" Value="Platform.x86.Generic" />
@@ -89,6 +94,16 @@
   </Module>
   <Module>
     <Property Name="Name" Value="vcpfpp30.br" />
+    <Property Name="Version" Value="Core" />
+    <Property Name="Platform" Value="Platform.x86.Generic" />
+  </Module>
+  <Module>
+    <Property Name="Name" Value="vcpdvnc.br" />
+    <Property Name="Version" Value="Core" />
+    <Property Name="Platform" Value="Platform.x86.Generic" />
+  </Module>
+  <Module>
+    <Property Name="Name" Value="vcpfar00.br" />
     <Property Name="Version" Value="Core" />
     <Property Name="Platform" Value="Platform.x86.Generic" />
   </Module>

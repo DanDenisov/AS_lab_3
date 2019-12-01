@@ -1,5 +1,6 @@
 $(AS_PROJECT_PATH)/Logical/Libraries/AsIOTime/AsIOTime.fun
 $(AS_PROJECT_PATH)/Logical/Libraries/MotorCtrl/MotorCtrl.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/MotorCtrl/Types.typ
 $(AS_PROJECT_PATH)/Logical/SDCAxisCtrlX/Variables.var
 $(AS_PROJECT_PATH)/Logical/Global.var
 $(AS_PROJECT_PATH)/Logical/Libraries/Acp10sdc/acp10sdc.typ

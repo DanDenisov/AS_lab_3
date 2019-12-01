@@ -9,9 +9,9 @@
       Source="SDCAxisCtrlX"
       Language="ANSIC">
       <File
-        Path="C:\projects\Lab3\Logical\SDCAxisCtrlX\Types.typ" />
+        Path="C:\Projects\Lab3\Logical\SDCAxisCtrlX\Types.typ" />
       <File
-        Path="C:\projects\Lab3\Logical\SDCAxisCtrlX\Variables.var" />
+        Path="C:\Projects\Lab3\Logical\SDCAxisCtrlX\Variables.var" />
     </Task>
   </TaskClass>
   <TaskClass

@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1574698449_4_
-#define _BUR_1574698449_4_
+#ifndef _BUR_1575215764_1_
+#define _BUR_1575215764_1_
 
 #include <bur/plctypes.h>
 
@@ -13,7 +13,6 @@
 
 
 /* Variables */
-_BUR_LOCAL signed short min_task;
 _BUR_LOCAL unsigned short pwm_period;
 _BUR_LOCAL struct FB_Regulator fb_regulator;
 _BUR_LOCAL signed short coil_pwm_value;
@@ -35,5 +34,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/MotorCtrl/MotorCtrl.fun\\\" scop
 __asm__(".previous");
 
 
-#endif /* _BUR_1574698449_4_ */
+#endif /* _BUR_1575215764_1_ */
 

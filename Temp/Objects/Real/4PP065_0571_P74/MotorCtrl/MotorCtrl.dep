@@ -1,1 +1,2 @@
 $(AS_PROJECT_PATH)/Logical/Libraries/MotorCtrl/MotorCtrl.fun
+$(AS_PROJECT_PATH)/Logical/Libraries/MotorCtrl/Types.typ

@@ -1,6 +1,6 @@
 <BuildOptions>
   <BuildOption>
-    <SourceFile Value="C:/projects/Lab3/Physical/Real/4PP065_0571_P74/Cpu.sw" />
+    <SourceFile Value="C:/Projects/Lab3/Physical/Real/4PP065_0571_P74/Cpu.sw" />
     <Query Value="/ns:SwConfiguration/ns:TaskClass/*$$Name,Source" />
     <Xml>
       <Task Name="SDCAxisCtr" Source="SDCAxisCtrlX.prg" />

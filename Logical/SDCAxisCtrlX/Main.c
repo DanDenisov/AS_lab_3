@@ -421,9 +421,11 @@ void _INIT ProgramInit(void)
 	
 	fb_regulator.integrator.dt = 0.002;
 	fb_regulator.integrator.direct = 0;
-	fb_regulator.k_i = 0.16;
-	fb_regulator.k_p = 0.0064;
-	fb_regulator.max_abs_value = 12.0;
+	fb_regulator.k_i = 1;
+	fb_regulator.k_p = 0.0001;
+	fb_regulator.max_abs_value = 24.0;
+	
+	axis_X.MaxSpeed = 100;
 	
 	pwm_period = 200;
 }
@@ -443,22 +445,20 @@ void _CYCLIC ProgramCyclic(void)
 	
 	Axis_X_DiDoIf.iPosHwEnd = axis_X.endswitch_b_reached;
 	Axis_X_DiDoIf.iNegHwEnd = axis_X.endswitch_a_reached;
-	Axis_X_DiDoIf.iReference = 1;
 	
 	coil_pwm_value = coil_powered ? 32767 : 0;
 	
-	fb_regulator.e = Axis_X_DrvIf.oSetPos * 6500 / 32767 - axis_X.speed;
-	FB_Regulator(&fb_regulator);
-		
-	if (fb_regulator.e == 0)
-		axis_X.u = 0;
-	else
-		axis_X.u = fb_regulator.u;
-	FB_Axis(&axis_X);
-	
-	if (!coil_powered)
+	if (coil_powered)
 	{
-		axis_X.pwm_value = axis_X.pwm_percentage = 0;
+		fb_regulator.e = axis_X.SetSpeed - axis_X.FeedbackSpeed;
+		FB_Regulator(&fb_regulator);
+		
+		axis_X.u = fb_regulator.u;
+		FB_Axis(&axis_X);
+	}
+	else
+	{
+		axis_X.pwm_value = 0;
 	}
 }
 

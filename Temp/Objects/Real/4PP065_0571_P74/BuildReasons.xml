@@ -3,12 +3,40 @@
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\gui\gui.mak">
     <BuildReason>Rule is forced.</BuildReason>
   </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\motorctrl\fb_integrator.c.o">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\includes\motorctrl.h" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\motorctrl\fb_regulator.c.o">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\includes\motorctrl.h" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\motorctrl\fb_axis.c.o">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\libraries\motorctrl\fb_axis.c" differs.
+</BuildReason>
+  </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\main.c.o">
-    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\sdcaxisctrlx\main.c" differs.
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\libraries\motorctrl\motorctrl.fun" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\motorctrl\fb_motor.c.o">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\includes\motorctrl.h" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\motorctrl\a.out">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\motorctrl\fb_regulator.c.o" differs.
 </BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\_bur_pvdef.c.o">
     <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\main.c.o" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\motorctrl\motorctrl.ox">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\motorctrl\a.out" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\motorctrl.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\motorctrl\motorctrl.ox" differs.
 </BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\a.out">
@@ -21,6 +49,10 @@
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr.br">
     <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\sdcaxisctr\sdcaxisctr.ox" differs.
+</BuildReason>
+  </Rule>
+  <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\iomap.br">
+    <BuildReason>Prerequiste "$(AS_PROJECT_PATH)\logical\libraries\motorctrl\motorctrl.fun" differs.
 </BuildReason>
   </Rule>
   <Rule ID="$(AS_PROJECT_PATH)\temp\objects\real\4pp065_0571_p74\gui.br">

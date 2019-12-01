@@ -9,6 +9,5 @@
     <Object Type="Package" Description="Axis_Xobj">Axis_Xobj</Object>
     <Object Type="Program" Language="ANSIC">SDCAxisCtrlX</Object>
     <Object Type="DataObject" Language="Vc" Description="320x240">GUI</Object>
-    <Object Type="Program" Language="ANSIC">SDCCTRL</Object>
   </Objects>
 </Package>

@@ -2,13 +2,13 @@
 <Parameters>
   <Connection>
     <DeviceParameters>/IF=tcpip /LOPO=11159 /SA=1</DeviceParameters>
-    <ConnectionParameters>/AM=* /DAIP=10.0.1.10 /REPO=11159 /ANSL=1 /PT=11169</ConnectionParameters>
+    <ConnectionParameters>/RT=1000 /DAIP=127.0.0.1 /REPO=11160 /ANSL=1 /AM=* /PT=11169</ConnectionParameters>
   </Connection>
   <AsProject>
-    <ApjFullFileName>C:\projects\Lab3\Lab3.apj</ApjFullFileName>
+    <ApjFullFileName>C:\Projects\Lab3\Lab3.apj</ApjFullFileName>
     <ProjectName>Lab3</ProjectName>
     <ActiveConfigurationName>Real</ActiveConfigurationName>
-    <LicenseDataFolder>C:\projects\Lab3\Temp\Objects\Real\4PP065_0571_P74</LicenseDataFolder>
+    <LicenseDataFolder>C:\Projects\Lab3\Temp\Objects\Real\4PP065_0571_P74</LicenseDataFolder>
   </AsProject>
   <General>
     <DeleteParameterFile>false</DeleteParameterFile>

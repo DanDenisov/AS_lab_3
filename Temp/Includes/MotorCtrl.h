@@ -15,6 +15,12 @@ extern "C"
 #define _BUR_PUBLIC
 #endif
 /* Datatypes and datatypes of function blocks */
+typedef enum AxisStates
+{	STOP = 0,
+	HOMING = 1,
+	MOVING = 2
+} AxisStates;
+
 typedef struct FB_Integrator
 {
 	/* VAR_INPUT (analog) */
@@ -63,25 +69,27 @@ typedef struct FB_Axis
 {
 	/* VAR_INPUT (analog) */
 	float u;
+	signed short UserSpeed;
 	/* VAR_OUTPUT (analog) */
 	signed short pwm_value;
 	signed short counter;
-	signed short speed;
+	float FeedbackSpeed;
+	signed short SetSpeed;
 	/* VAR (analog) */
+	enum AxisStates state;
+	enum AxisStates prev_state;
+	plcstring StatusString[81];
+	unsigned short MaxSpeed;
 	signed short last_counter;
-	signed char pwm_percentage;
 	/* VAR_INPUT (digital) */
-	plcbit force_a;
-	plcbit force_b;
 	plcbit endswitch_a_reached;
 	plcbit endswitch_b_reached;
 	/* VAR_OUTPUT (digital) */
 	plcbit reset_error;
 	plcbit reset_counter;
 	/* VAR (digital) */
-	plcbit ForceStop;
-	plcbit Home;
-	plcbit Manual;
+	plcbit Referenced;
+	plcbit RefSwitchA;
 } FB_Axis_typ;
 
 

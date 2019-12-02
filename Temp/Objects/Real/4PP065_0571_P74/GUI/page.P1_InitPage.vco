@@ -187,7 +187,7 @@
             <UInt32 Name="Right">308</UInt32>
             <UInt32 Name="Bottom">129</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
-            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.counter]</Reference>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.Counter]</Reference>
             <UInt32 Name="MinDatapoint">4294967295</UInt32>
             <UInt32 Name="MaxDatapoint">4294967295</UInt32>
             <UInt32 Name="TeachDatapoint">4294967295</UInt32>
@@ -859,7 +859,7 @@
             <UInt32 Name="Right">308</UInt32>
             <UInt32 Name="Bottom">167</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
-            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.pwm_value]</Reference>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.PWM]</Reference>
             <UInt32 Name="MinDatapoint">4294967295</UInt32>
             <UInt32 Name="MaxDatapoint">4294967295</UInt32>
             <UInt32 Name="TeachDatapoint">4294967295</UInt32>
@@ -1057,7 +1057,7 @@
               <Double Name="SetValue">1</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.coil_powered]</Reference>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.CoilPowered]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
               <Byte Name="Mode">1</Byte>
               <Byte Name="Reserved">0</Byte>
@@ -1197,15 +1197,14 @@
               <UInt16 Name="Reserved">0</UInt16>
               <UInt32 Name="LockingDatapoint">4294967295</UInt32>
               <UInt32 Name="LockingLevel">0</UInt32>
-              <Double Name="SetValue">1</Double>
+              <Double Name="SetValue">0</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceStop]</Reference>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.State]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
-              <Byte Name="Mode">1</Byte>
+              <Byte Name="Mode">0</Byte>
               <Byte Name="Reserved">0</Byte>
-              <Byte Name="Reserved1">0</Byte>
-              <Byte Name="Reserved2">0</Byte>
+              <UInt16 Name="Reserved1">0</UInt16>
             </Group>
           </Object>
           <Object Name="set_current_0" ClsId="0x0" Version="1" Type="VKEY" RefString="Source[local].VirtualKey[set_current_0]">
@@ -1331,7 +1330,7 @@
               <Double Name="SetValue">1</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.state]</Reference>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.State]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
               <Byte Name="Mode">0</Byte>
               <Byte Name="Reserved">0</Byte>
@@ -1357,11 +1356,12 @@
               <Double Name="SetValue">1</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.endswitch_a_reached]</Reference>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceSwitchA]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
-              <Byte Name="Mode">0</Byte>
+              <Byte Name="Mode">1</Byte>
               <Byte Name="Reserved">0</Byte>
-              <UInt16 Name="Reserved1">0</UInt16>
+              <Byte Name="Reserved1">0</Byte>
+              <Byte Name="Reserved2">0</Byte>
             </Group>
           </Object>
           <Object Name="%embVirtualKey_1" ClsId="0x0" Version="1" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_1]">
@@ -1383,11 +1383,12 @@
               <Double Name="SetValue">1</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <UInt32 Name="ValueDatapoint">4294967295</UInt32>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceSwitchB]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
-              <Byte Name="Mode">0</Byte>
+              <Byte Name="Mode">1</Byte>
               <Byte Name="Reserved">0</Byte>
-              <UInt16 Name="Reserved1">0</UInt16>
+              <Byte Name="Reserved1">0</Byte>
+              <Byte Name="Reserved2">0</Byte>
             </Group>
           </Object>
           <Object Name="%embVirtualKey_4" ClsId="0x0" Version="1" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_4]">
@@ -1406,10 +1407,10 @@
               <UInt16 Name="Reserved">0</UInt16>
               <UInt32 Name="LockingDatapoint">4294967295</UInt32>
               <UInt32 Name="LockingLevel">0</UInt32>
-              <Double Name="SetValue">1</Double>
+              <Double Name="SetValue">2</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <UInt32 Name="ValueDatapoint">4294967295</UInt32>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.State]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
               <Byte Name="Mode">0</Byte>
               <Byte Name="Reserved">0</Byte>

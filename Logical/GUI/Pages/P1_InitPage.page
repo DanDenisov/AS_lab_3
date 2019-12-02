@@ -157,7 +157,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="110"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.counter]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.Counter]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="46"/>
         </Control>
@@ -388,7 +388,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="148"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.pwm_value]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.PWM]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="46"/>
         </Control>
@@ -464,7 +464,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.coil_powered]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.CoilPowered]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -542,15 +542,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x0000016A">
+            <KeyAction ClassId="0x00000161">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceStop]"/>
+              <Property Name="SetValue" Value="0"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.State]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -625,7 +624,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.state]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.State]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -633,14 +632,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000161">
+            <KeyAction ClassId="0x0000016A">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.endswitch_a_reached]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceSwitchA]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -648,14 +648,15 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x00000161">
+            <KeyAction ClassId="0x0000016A">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="None"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceSwitchB]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -669,8 +670,8 @@
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="None"/>
+              <Property Name="SetValue" Value="2"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.State]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

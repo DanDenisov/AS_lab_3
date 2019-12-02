@@ -5,8 +5,6 @@
   <Hardware Target="SG4"/>
   <Operation Delete="SDCAxisCtr.br"/>
   <Operation Delete="GUI.br"/>
-  <Operation Delete="vcpfar00.br"/>
-  <Operation Delete="vcpdvnc.br"/>
   <Operation Delete="vctcal.br"/>
   <Operation Delete="vcpfpp30.br"/>
   <Operation Delete="vcbclass.br"/>
@@ -31,7 +29,6 @@
   <Operation Delete="GUI03.br"/>
   <Operation Delete="GUI02.br"/>
   <Operation Delete="GUI01.br"/>
-  <Operation Delete="vcnet.br"/>
   <Operation Delete="dataobj.br"/>
   <Operation Delete="vcgclass.br"/>
   <Operation Delete="vcpfmtcx.br"/>
@@ -74,7 +71,6 @@
   <Operation Download="vcpfmtcx.br" Memory="UserROM"/>
   <Operation Download="vcgclass.br" Memory="UserROM"/>
   <Operation Download="dataobj.br" Memory="UserROM"/>
-  <Operation Download="vcnet.br" Memory="UserROM"/>
   <Operation Download="GUI01.br" Memory="UserROM"/>
   <Operation Download="GUI02.br" Memory="UserROM"/>
   <Operation Download="GUI03.br" Memory="UserROM"/>
@@ -82,7 +78,6 @@
   <Operation Download="arial.br" Memory="UserROM"/>
   <Operation Download="vcshared.br" Memory="UserROM"/>
   <Operation Download="MotorCtrl.br" Memory="UserROM"/>
-  <Operation Download="AsIOTime.br" Memory="UserROM"/>
   <Operation Download="TCData.br" Memory="SystemROM"/>
   <Operation Download="udbdef.br" Memory="UserROM"/>
   <Operation Download="vcpdsw.br" Memory="UserROM"/>
@@ -108,8 +103,7 @@
   <Operation Download="User.br" Memory="UserROM"/>
   <Operation Download="Role.br" Memory="UserROM"/>
   <Operation Download="AsBrStr.br" Memory="UserROM"/>
-  <Operation Download="vcpdvnc.br" Memory="UserROM"/>
-  <Operation Download="vcpfar00.br" Memory="UserROM"/>
+  <Operation Download="AsIOTime.br" Memory="UserROM"/>
   <Operation Download="GUI.br" Memory="UserROM"/>
   <Operation Download="SDCAxisCtr.br" Memory="UserROM"/>
 </Transfer>

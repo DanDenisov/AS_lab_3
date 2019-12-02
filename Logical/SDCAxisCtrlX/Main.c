@@ -403,62 +403,64 @@ void _EXIT ProgramExit(void)
 
 void _INIT ProgramInit(void)
 {
-	//Устанваливаем типы SDC модулей
-	Axis_X_HW.EncIf1_Typ = ncSDC_ENC16;
-	Axis_X_HW.DiDoIf_Typ = ncSDC_DIDO;
-	Axis_X_HW.DrvIf_Typ = ncSDC_DRVSERVO16;
-	
-	//Устанавливаем имена переменных
-	strcpy(Axis_X_HW.EncIf1_Name, "Axis_X_EncIf");
-	strcpy(Axis_X_HW.DrvIf_Name, "Axis_X_DrvIf");
-	strcpy(Axis_X_HW.DiDoIf_Name, "Axis_X_DiDoIf");
-		
-	//Устанавливаем входы готовности и нормальной работы
-	Axis_X_EncIf.iEncOK = 1;
-	Axis_X_DrvIf.iDrvOK = 1;
-	Axis_X_DrvIf.iStatusEnable = 1;
-	Axis_X_DiDoIf.iDriveReady = 1;
+//	//Устанваливаем типы SDC модулей
+//	Axis_X_HW.EncIf1_Typ = ncSDC_ENC16;
+//	Axis_X_HW.DiDoIf_Typ = ncSDC_DIDO;
+//	Axis_X_HW.DrvIf_Typ = ncSDC_DRVSERVO16;
+//	
+//	//Устанавливаем имена переменных
+//	strcpy(Axis_X_HW.EncIf1_Name, "Axis_X_EncIf");
+//	strcpy(Axis_X_HW.DrvIf_Name, "Axis_X_DrvIf");
+//	strcpy(Axis_X_HW.DiDoIf_Name, "Axis_X_DiDoIf");
+//		
+//	//Устанавливаем входы готовности и нормальной работы
+//	Axis_X_EncIf.iEncOK = 1;
+//	Axis_X_DrvIf.iDrvOK = 1;
+//	Axis_X_DrvIf.iStatusEnable = 1;
+//	Axis_X_DiDoIf.iDriveReady = 1;
 	
 	fb_regulator.integrator.dt = 0.002;
 	fb_regulator.integrator.direct = 0;
-	fb_regulator.k_i = 1;
+	fb_regulator.k_i = 2.5;
 	fb_regulator.k_p = 0.0001;
 	fb_regulator.max_abs_value = 24.0;
 	
 	axis_X.MaxSpeed = 100;
+	axis_X.RefSwitch = 0;  //0 - switch A, 1 - switch B
+	axis_X.RefDirection = 1;  //0 - negative, 1 - positive
 	
-	pwm_period = 200;
+	PWM_Period = 200;
 }
 
 void _CYCLIC ProgramCyclic(void)
 {	
-	Axis_X_EncIf.iLifeCnt++;
-	Axis_X_DiDoIf.iLifeCntDriveEnable++; 
-	Axis_X_DiDoIf.iLifeCntDriveReady++; 
-	Axis_X_DiDoIf.iLifeCntNegHwEnd++; 
-	Axis_X_DiDoIf.iLifeCntPosHwEnd++; 
-	Axis_X_DiDoIf.iLifeCntReference++;
-	Axis_X_DrvIf.iLifeCnt++;
+//	Axis_X_EncIf.iLifeCnt++;
+//	Axis_X_DiDoIf.iLifeCntDriveEnable++; 
+//	Axis_X_DiDoIf.iLifeCntDriveReady++; 
+//	Axis_X_DiDoIf.iLifeCntNegHwEnd++; 
+//	Axis_X_DiDoIf.iLifeCntPosHwEnd++; 
+//	Axis_X_DiDoIf.iLifeCntReference++;
+//	Axis_X_DrvIf.iLifeCnt++;
 	
-	Axis_X_EncIf.iActTime = (INT)	AsIOTimeCyclicStart();
-	Axis_X_EncIf.iActPos = axis_X.counter;
+//	Axis_X_EncIf.iActTime = (INT)	AsIOTimeCyclicStart();
+//	Axis_X_EncIf.iActPos = axis_X.counter;
+//	
+//	Axis_X_DiDoIf.iPosHwEnd = axis_X.endswitch_b_reached;
+//	Axis_X_DiDoIf.iNegHwEnd = axis_X.endswitch_a_reached;
 	
-	Axis_X_DiDoIf.iPosHwEnd = axis_X.endswitch_b_reached;
-	Axis_X_DiDoIf.iNegHwEnd = axis_X.endswitch_a_reached;
+	CoilPWM = CoilPowered ? 32767 : 0;
 	
-	coil_pwm_value = coil_powered ? 32767 : 0;
-	
-	if (coil_powered)
+	if (CoilPowered)
 	{
 		fb_regulator.e = axis_X.SetSpeed - axis_X.FeedbackSpeed;
 		FB_Regulator(&fb_regulator);
 		
-		axis_X.u = fb_regulator.u;
+		axis_X.U = fb_regulator.u;
 		FB_Axis(&axis_X);
 	}
 	else
 	{
-		axis_X.pwm_value = 0;
+		axis_X.PWM = 0;
 	}
 }
 

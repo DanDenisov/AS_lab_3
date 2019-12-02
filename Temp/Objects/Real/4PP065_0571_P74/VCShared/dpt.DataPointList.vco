@@ -3,42 +3,43 @@
 <Intermediate xmlns="http://br.automation.co.at/AS/VC/Intermediate">
   <Folder Name="DPV">
     <Folder Name="POBJ">
-      <Object Name="DataSource.SDCAxisCtrlX.axis_X.counter" ClsId="0x0" Version="0" TargetIndex="0" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.counter]" />
-      <Object Name="DataSource.SDCAxisCtrlX.axis_X.ForceStop" ClsId="0x0" Version="0" TargetIndex="1" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceStop]" />
-      <Object Name="DataSource.SDCAxisCtrlX.axis_X.endswitch_a_reached" ClsId="0x0" Version="0" TargetIndex="2" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.endswitch_a_reached]" />
-      <Object Name="DataSource.SDCAxisCtrlX.axis_X.pwm_value" ClsId="0x0" Version="0" TargetIndex="3" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.pwm_value]" />
-      <Object Name="DataSource.SDCAxisCtrlX.axis_X.state" ClsId="0x0" Version="0" TargetIndex="4" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.state]" />
-      <Object Name="DataSource.SDCAxisCtrlX.axis_X.UserSpeed" ClsId="0x0" Version="0" TargetIndex="5" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.UserSpeed]" />
-      <Object Name="DataSource.SDCAxisCtrlX.axis_X.StatusString" ClsId="0x0" Version="0" TargetIndex="6" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.StatusString]" />
-      <Object Name="DataSource.SDCAxisCtrlX.axis_X.FeedbackSpeed" ClsId="0x0" Version="0" TargetIndex="7" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.FeedbackSpeed]" />
-      <Object Name="DataSource.SDCAxisCtrlX.coil_powered" ClsId="0x0" Version="0" TargetIndex="8" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.coil_powered]" />
-      <Object Name="DataSource.Main.reset_error" ClsId="0x0" Version="0" TargetIndex="9" Type="DP" RefString="Source[global].Variable[DataSource.Main.reset_error]" />
-      <Object Name="DataSource.Main.pwm_field_color" ClsId="0x0" Version="0" TargetIndex="10" Type="DP" RefString="Source[global].Variable[DataSource.Main.pwm_field_color]" />
-      <Object Name="DataSource.Axis_X_DiDoIf.iReference" ClsId="0x0" Version="0" TargetIndex="11" Type="DP" RefString="Source[global].Variable[DataSource.Axis_X_DiDoIf.iReference]" />
-      <Object Name="DataSource.path" ClsId="0x0" Version="0" TargetIndex="12" Type="DP" RefString="Source[global].Variable[DataSource.path]" />
-      <Object Name="Internal.Display.Brightness" ClsId="0x0" Version="0" TargetIndex="13" Type="DP" RefString="Source[global].Variable[Internal.Display.Brightness]" />
-      <Object Name="Internal.Display.Contrast" ClsId="0x0" Version="0" TargetIndex="14" Type="DP" RefString="Source[global].Variable[Internal.Display.Contrast]" />
-      <Object Name="Internal.Display.BackLight" ClsId="0x0" Version="0" TargetIndex="15" Type="DP" RefString="Source[global].Variable[Internal.Display.BackLight]" />
-      <Object Name="Internal.Connection.IPAddress" ClsId="0x0" Version="0" TargetIndex="16" Type="DP" RefString="Source[global].Variable[Internal.Connection.IPAddress]" />
-      <Object Name="Internal.Connection.NodeNumber" ClsId="0x0" Version="0" TargetIndex="17" Type="DP" RefString="Source[global].Variable[Internal.Connection.NodeNumber]" />
-      <Object Name="Internal.Temperature.CPU" ClsId="0x0" Version="0" TargetIndex="18" Type="DP" RefString="Source[global].Variable[Internal.Temperature.CPU]" />
-      <Object Name="Internal.Temperature.Room" ClsId="0x0" Version="0" TargetIndex="19" Type="DP" RefString="Source[global].Variable[Internal.Temperature.Room]" />
-      <Object Name="Internal.DateTime.Day" ClsId="0x0" Version="0" TargetIndex="20" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Day]" />
-      <Object Name="Internal.DateTime.Hour" ClsId="0x0" Version="0" TargetIndex="21" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Hour]" />
-      <Object Name="Internal.DateTime.Minute" ClsId="0x0" Version="0" TargetIndex="22" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Minute]" />
-      <Object Name="Internal.DateTime.Month" ClsId="0x0" Version="0" TargetIndex="23" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Month]" />
-      <Object Name="Internal.DateTime.Second" ClsId="0x0" Version="0" TargetIndex="24" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Second]" />
-      <Object Name="Internal.DateTime.Year" ClsId="0x0" Version="0" TargetIndex="25" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Year]" />
-      <Object Name="Internal.DateTime.DayOfWeek" ClsId="0x0" Version="0" TargetIndex="26" Type="DP" RefString="Source[global].Variable[Internal.DateTime.DayOfWeek]" />
-      <Object Name="Internal.Memory.LargestFreeBlock" ClsId="0x0" Version="0" TargetIndex="27" Type="DP" RefString="Source[global].Variable[Internal.Memory.LargestFreeBlock]" />
-      <Object Name="Internal.Memory.TotalFree" ClsId="0x0" Version="0" TargetIndex="28" Type="DP" RefString="Source[global].Variable[Internal.Memory.TotalFree]" />
-      <Object Name="Internal.Memory.TotalInstalled" ClsId="0x0" Version="0" TargetIndex="29" Type="DP" RefString="Source[global].Variable[Internal.Memory.TotalInstalled]" />
+      <Object Name="DataSource.SDCAxisCtrlX.axis_X.endswitch_a_reached" ClsId="0x0" Version="0" TargetIndex="0" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.endswitch_a_reached]" />
+      <Object Name="DataSource.SDCAxisCtrlX.axis_X.UserSpeed" ClsId="0x0" Version="0" TargetIndex="1" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.UserSpeed]" />
+      <Object Name="DataSource.SDCAxisCtrlX.axis_X.StatusString" ClsId="0x0" Version="0" TargetIndex="2" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.StatusString]" />
+      <Object Name="DataSource.SDCAxisCtrlX.axis_X.FeedbackSpeed" ClsId="0x0" Version="0" TargetIndex="3" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.FeedbackSpeed]" />
+      <Object Name="DataSource.SDCAxisCtrlX.axis_X.ForceSwitchA" ClsId="0x0" Version="0" TargetIndex="4" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceSwitchA]" />
+      <Object Name="DataSource.SDCAxisCtrlX.axis_X.ForceSwitchB" ClsId="0x0" Version="0" TargetIndex="5" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceSwitchB]" />
+      <Object Name="DataSource.SDCAxisCtrlX.axis_X.PWM" ClsId="0x0" Version="0" TargetIndex="6" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.PWM]" />
+      <Object Name="DataSource.SDCAxisCtrlX.axis_X.Counter" ClsId="0x0" Version="0" TargetIndex="7" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.Counter]" />
+      <Object Name="DataSource.SDCAxisCtrlX.axis_X.State" ClsId="0x0" Version="0" TargetIndex="8" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.State]" />
+      <Object Name="DataSource.SDCAxisCtrlX.CoilPowered" ClsId="0x0" Version="0" TargetIndex="9" Type="DP" RefString="Source[global].Variable[DataSource.SDCAxisCtrlX.CoilPowered]" />
+      <Object Name="DataSource.Main.reset_error" ClsId="0x0" Version="0" TargetIndex="10" Type="DP" RefString="Source[global].Variable[DataSource.Main.reset_error]" />
+      <Object Name="DataSource.Main.pwm_field_color" ClsId="0x0" Version="0" TargetIndex="11" Type="DP" RefString="Source[global].Variable[DataSource.Main.pwm_field_color]" />
+      <Object Name="DataSource.Axis_X_DiDoIf.iReference" ClsId="0x0" Version="0" TargetIndex="12" Type="DP" RefString="Source[global].Variable[DataSource.Axis_X_DiDoIf.iReference]" />
+      <Object Name="DataSource.path" ClsId="0x0" Version="0" TargetIndex="13" Type="DP" RefString="Source[global].Variable[DataSource.path]" />
+      <Object Name="Internal.Display.Brightness" ClsId="0x0" Version="0" TargetIndex="14" Type="DP" RefString="Source[global].Variable[Internal.Display.Brightness]" />
+      <Object Name="Internal.Display.Contrast" ClsId="0x0" Version="0" TargetIndex="15" Type="DP" RefString="Source[global].Variable[Internal.Display.Contrast]" />
+      <Object Name="Internal.Display.BackLight" ClsId="0x0" Version="0" TargetIndex="16" Type="DP" RefString="Source[global].Variable[Internal.Display.BackLight]" />
+      <Object Name="Internal.Connection.IPAddress" ClsId="0x0" Version="0" TargetIndex="17" Type="DP" RefString="Source[global].Variable[Internal.Connection.IPAddress]" />
+      <Object Name="Internal.Connection.NodeNumber" ClsId="0x0" Version="0" TargetIndex="18" Type="DP" RefString="Source[global].Variable[Internal.Connection.NodeNumber]" />
+      <Object Name="Internal.Temperature.CPU" ClsId="0x0" Version="0" TargetIndex="19" Type="DP" RefString="Source[global].Variable[Internal.Temperature.CPU]" />
+      <Object Name="Internal.Temperature.Room" ClsId="0x0" Version="0" TargetIndex="20" Type="DP" RefString="Source[global].Variable[Internal.Temperature.Room]" />
+      <Object Name="Internal.DateTime.Day" ClsId="0x0" Version="0" TargetIndex="21" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Day]" />
+      <Object Name="Internal.DateTime.Hour" ClsId="0x0" Version="0" TargetIndex="22" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Hour]" />
+      <Object Name="Internal.DateTime.Minute" ClsId="0x0" Version="0" TargetIndex="23" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Minute]" />
+      <Object Name="Internal.DateTime.Month" ClsId="0x0" Version="0" TargetIndex="24" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Month]" />
+      <Object Name="Internal.DateTime.Second" ClsId="0x0" Version="0" TargetIndex="25" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Second]" />
+      <Object Name="Internal.DateTime.Year" ClsId="0x0" Version="0" TargetIndex="26" Type="DP" RefString="Source[global].Variable[Internal.DateTime.Year]" />
+      <Object Name="Internal.DateTime.DayOfWeek" ClsId="0x0" Version="0" TargetIndex="27" Type="DP" RefString="Source[global].Variable[Internal.DateTime.DayOfWeek]" />
+      <Object Name="Internal.Memory.LargestFreeBlock" ClsId="0x0" Version="0" TargetIndex="28" Type="DP" RefString="Source[global].Variable[Internal.Memory.LargestFreeBlock]" />
+      <Object Name="Internal.Memory.TotalFree" ClsId="0x0" Version="0" TargetIndex="29" Type="DP" RefString="Source[global].Variable[Internal.Memory.TotalFree]" />
+      <Object Name="Internal.Memory.TotalInstalled" ClsId="0x0" Version="0" TargetIndex="30" Type="DP" RefString="Source[global].Variable[Internal.Memory.TotalInstalled]" />
       <Object Name="DPV" ClsId="0x100" Version="1" Type="DPM" RefString="Source[global].DPV[]">
         <Byte Name="TaskPrior">200</Byte>
         <Byte Name="Reserved">0</Byte>
         <UInt16 Name="Reserved">0</UInt16>
-        <UInt32 Name="DPCount">30</UInt32>
-        <Group Name="SDCAxisCtrlX.axis_X.counter">
+        <UInt32 Name="DPCount">31</UInt32>
+        <Group Name="SDCAxisCtrlX.axis_X.endswitch_a_reached">
           <UInt32 Name="DPID">0</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -49,7 +50,7 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="SDCAxisCtrlX.axis_X.ForceStop">
+        <Group Name="SDCAxisCtrlX.axis_X.UserSpeed">
           <UInt32 Name="DPID">1</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -60,7 +61,7 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="SDCAxisCtrlX.axis_X.endswitch_a_reached">
+        <Group Name="SDCAxisCtrlX.axis_X.StatusString">
           <UInt32 Name="DPID">2</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -71,18 +72,18 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="SDCAxisCtrlX.axis_X.pwm_value">
+        <Group Name="SDCAxisCtrlX.axis_X.FeedbackSpeed">
           <UInt32 Name="DPID">3</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">3</UInt16>
-          <Reference Name="UG" Type="UG">none</Reference>
-          <Reference Name="UGPLC" Type="UNIT">none</Reference>
+          <Reference Name="UG" Type="UG">None</Reference>
+          <Reference Name="UGPLC" Type="UNIT">None</Reference>
           <UInt32 Name="Limit">4294967295</UInt32>
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="SDCAxisCtrlX.axis_X.state">
+        <Group Name="SDCAxisCtrlX.axis_X.ForceSwitchA">
           <UInt32 Name="DPID">4</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -93,7 +94,7 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="SDCAxisCtrlX.axis_X.UserSpeed">
+        <Group Name="SDCAxisCtrlX.axis_X.ForceSwitchB">
           <UInt32 Name="DPID">5</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -104,7 +105,7 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="SDCAxisCtrlX.axis_X.StatusString">
+        <Group Name="SDCAxisCtrlX.axis_X.PWM">
           <UInt32 Name="DPID">6</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -115,18 +116,18 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="SDCAxisCtrlX.axis_X.FeedbackSpeed">
+        <Group Name="SDCAxisCtrlX.axis_X.Counter">
           <UInt32 Name="DPID">7</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">7</UInt16>
-          <Reference Name="UG" Type="UG">None</Reference>
-          <Reference Name="UGPLC" Type="UNIT">None</Reference>
+          <Reference Name="UG" Type="UG">none</Reference>
+          <Reference Name="UGPLC" Type="UNIT">none</Reference>
           <UInt32 Name="Limit">4294967295</UInt32>
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="SDCAxisCtrlX.coil_powered">
+        <Group Name="SDCAxisCtrlX.axis_X.State">
           <UInt32 Name="DPID">8</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -137,7 +138,7 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="Main.reset_error">
+        <Group Name="SDCAxisCtrlX.CoilPowered">
           <UInt32 Name="DPID">9</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -148,7 +149,7 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="Main.pwm_field_color">
+        <Group Name="Main.reset_error">
           <UInt32 Name="DPID">10</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -159,7 +160,7 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="Axis_X_DiDoIf.iReference">
+        <Group Name="Main.pwm_field_color">
           <UInt32 Name="DPID">11</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -170,7 +171,7 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="path">
+        <Group Name="Axis_X_DiDoIf.iReference">
           <UInt32 Name="DPID">12</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
@@ -181,8 +182,19 @@
           <UInt16 Name="UserID">65535</UInt16>
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
-        <Group Name="Display.Brightness">
+        <Group Name="path">
           <UInt32 Name="DPID">13</UInt32>
+          <Reference Name="DS" Type="DS">Source[global].DataSource[DataSource]</Reference>
+          <UInt16 Name="UpdtTime">200</UInt16>
+          <UInt16 Name="PVID">13</UInt16>
+          <Reference Name="UG" Type="UG">none</Reference>
+          <Reference Name="UGPLC" Type="UNIT">none</Reference>
+          <UInt32 Name="Limit">4294967295</UInt32>
+          <UInt16 Name="UserID">65535</UInt16>
+          <UInt16 Name="ConnectionCount">1</UInt16>
+        </Group>
+        <Group Name="Display.Brightness">
+          <UInt32 Name="DPID">14</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">0</UInt16>
@@ -193,7 +205,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="Display.Contrast">
-          <UInt32 Name="DPID">14</UInt32>
+          <UInt32 Name="DPID">15</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">1</UInt16>
@@ -204,7 +216,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="Display.BackLight">
-          <UInt32 Name="DPID">15</UInt32>
+          <UInt32 Name="DPID">16</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">2</UInt16>
@@ -215,7 +227,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="Connection.IPAddress">
-          <UInt32 Name="DPID">16</UInt32>
+          <UInt32 Name="DPID">17</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">3</UInt16>
@@ -226,7 +238,7 @@
           <UInt16 Name="ConnectionCount">2</UInt16>
         </Group>
         <Group Name="Connection.NodeNumber">
-          <UInt32 Name="DPID">17</UInt32>
+          <UInt32 Name="DPID">18</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">4</UInt16>
@@ -237,7 +249,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="Temperature.CPU">
-          <UInt32 Name="DPID">18</UInt32>
+          <UInt32 Name="DPID">19</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">5</UInt16>
@@ -248,7 +260,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="Temperature.Room">
-          <UInt32 Name="DPID">19</UInt32>
+          <UInt32 Name="DPID">20</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">6</UInt16>
@@ -259,7 +271,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="DateTime.Day">
-          <UInt32 Name="DPID">20</UInt32>
+          <UInt32 Name="DPID">21</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">7</UInt16>
@@ -270,7 +282,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="DateTime.Hour">
-          <UInt32 Name="DPID">21</UInt32>
+          <UInt32 Name="DPID">22</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">8</UInt16>
@@ -281,7 +293,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="DateTime.Minute">
-          <UInt32 Name="DPID">22</UInt32>
+          <UInt32 Name="DPID">23</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">9</UInt16>
@@ -292,7 +304,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="DateTime.Month">
-          <UInt32 Name="DPID">23</UInt32>
+          <UInt32 Name="DPID">24</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">10</UInt16>
@@ -303,7 +315,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="DateTime.Second">
-          <UInt32 Name="DPID">24</UInt32>
+          <UInt32 Name="DPID">25</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">11</UInt16>
@@ -314,7 +326,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="DateTime.Year">
-          <UInt32 Name="DPID">25</UInt32>
+          <UInt32 Name="DPID">26</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">12</UInt16>
@@ -325,7 +337,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="DateTime.DayOfWeek">
-          <UInt32 Name="DPID">26</UInt32>
+          <UInt32 Name="DPID">27</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">13</UInt16>
@@ -336,7 +348,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="Memory.LargestFreeBlock">
-          <UInt32 Name="DPID">27</UInt32>
+          <UInt32 Name="DPID">28</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">14</UInt16>
@@ -347,7 +359,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="Memory.TotalFree">
-          <UInt32 Name="DPID">28</UInt32>
+          <UInt32 Name="DPID">29</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">15</UInt16>
@@ -358,7 +370,7 @@
           <UInt16 Name="ConnectionCount">1</UInt16>
         </Group>
         <Group Name="Memory.TotalInstalled">
-          <UInt32 Name="DPID">29</UInt32>
+          <UInt32 Name="DPID">30</UInt32>
           <Reference Name="DS" Type="DS">Source[global].DataSource[Internal]</Reference>
           <UInt16 Name="UpdtTime">200</UInt16>
           <UInt16 Name="PVID">16</UInt16>

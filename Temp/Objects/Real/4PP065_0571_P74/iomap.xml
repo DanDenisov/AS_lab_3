@@ -537,7 +537,7 @@
 <Prod Device="IF4.ST2.IF1.ST4" DPName="FirmwareVersion" Kind="io"/>
 </LN>
 <LN ID="%QW.IF4.ST2.IF1.ST4.PeriodDurationPWM" Type="UINT">
-<Prod Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:pwm_period" Kind="pv"/>
+<Prod Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:PWM_Period" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST4" DPName="PeriodDurationPWM" Kind="io"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST4.UnderVoltageError" Type="BOOL">
@@ -553,7 +553,7 @@
 <Prod Device="IF4.ST2.IF1.ST4" DPName="OvertemperatureError" Kind="io"/>
 </LN>
 <LN ID="%QW.IF4.ST2.IF1.ST4.PulseWidthCurrentPWM01" Type="INT">
-<Prod Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.pwm_value" Kind="pv"/>
+<Prod Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.PWM" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST4" DPName="PulseWidthCurrentPWM01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST4.StartLatch01" Type="BOOL">
@@ -563,19 +563,19 @@
 <Cons Device="IF4.ST2.IF1.ST4" DPName="DitherDisable01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST4.ClearError01" Type="BOOL">
-<Prod Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.reset_error" Kind="pv"/>
+<Prod Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.ResetError" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST4" DPName="ClearError01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST4.ShowMeanCurrent01" Type="BOOL">
 <Cons Device="IF4.ST2.IF1.ST4" DPName="ShowMeanCurrent01" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST4.ResetCounter01" Type="BOOL">
-<Prod Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.reset_counter" Kind="pv"/>
+<Prod Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.ResetCounter" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST4" DPName="ResetCounter01" Kind="io"/>
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST4.Counter01" Type="INT">
 <Prod Device="IF4.ST2.IF1.ST4" DPName="Counter01" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.counter" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.Counter" Kind="pv"/>
 </LN>
 <LN ID="%IW.IF4.ST2.IF1.ST4.CounterLatch01" Type="INT">
 <Prod Device="IF4.ST2.IF1.ST4" DPName="CounterLatch01" Kind="io"/>
@@ -588,11 +588,11 @@
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST4.StatusInput03" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST4" DPName="StatusInput03" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.endswitch_a_reached" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.EndSwitchA" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST4.StatusInput04" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST4" DPName="StatusInput04" Kind="io"/>
-<Cons Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.endswitch_b_reached" Kind="pv"/>
+<Cons Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:axis_X.EndSwitchB" Kind="pv"/>
 </LN>
 <LN ID="%IX.IF4.ST2.IF1.ST4.nLatchPending01" Type="BOOL">
 <Prod Device="IF4.ST2.IF1.ST4" DPName="nLatchPending01" Kind="io"/>
@@ -712,7 +712,7 @@
 <Prod Device="IF4.ST2.IF1.ST4" DPName="OverCurrentError03" Kind="io"/>
 </LN>
 <LN ID="%QW.IF4.ST2.IF1.ST4.PulseWidthCurrentPWM04" Type="INT">
-<Prod Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:coil_pwm_value" Kind="pv"/>
+<Prod Device="TC#1-CPYDEV" DPName="::SDCAxisCtr:CoilPWM" Kind="pv"/>
 <Cons Device="IF4.ST2.IF1.ST4" DPName="PulseWidthCurrentPWM04" Kind="io"/>
 </LN>
 <LN ID="%QX.IF4.ST2.IF1.ST4.StartLatch04" Type="BOOL">

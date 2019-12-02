@@ -57,7 +57,7 @@ LIB_LOCAL_OBJ_GUI=$(TEMP_PATH_GUI)/localobj.vca
 # Hardware sources
 PANEL_HW_OBJECT_GUI=$(TEMP_PATH_ROOT_GUI)/Objects/$(AS_CONFIGURATION)/$(AS_TEMP_PLC)/GUI/dis.Hardware.vco
 PANEL_HW_VCI_GUI=$(TEMP_PATH_ROOT_GUI)/Objects/$(AS_CONFIGURATION)/$(AS_TEMP_PLC)/GUI/dis.Hardware.vci
-PANEL_HW_SOURCE_GUI=C:/Projects/Lab3/Physical/Real/Hardware.hw 
+PANEL_HW_SOURCE_GUI=C:/projects/KRBO-02-16/Lab3/Physical/Real/Hardware.hw 
 DIS_OBJECTS_GUI=$(PANEL_HW_OBJECT_GUI) $(KEYMAP_OBJECTS_GUI)
 
 # KeyMapping flags
@@ -282,27 +282,27 @@ $(VCVK_OBJECTS_GUI): $(VC_LANGUAGES_GUI)
 TPR_OBJECTS_GUI = $(addprefix $(TEMP_PATH_GUI)/tpr., $(notdir $(TPR_SOURCES_GUI:.tpr=.vco)))
 
 $(TEMP_PATH_GUI)/tpr.AlphaPadQVGA.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/AlphaPadQVGA.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 $(TEMP_PATH_GUI)/tpr.AlphaPad.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/AlphaPad.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 $(TEMP_PATH_GUI)/tpr.EditPad.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/EditPad.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 $(TEMP_PATH_GUI)/tpr.NavigationPad_hor.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/NavigationPad_hor.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 $(TEMP_PATH_GUI)/tpr.NavigationPad_ver.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/NavigationPad_ver.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 $(TEMP_PATH_GUI)/tpr.NumPad.vco: $(AS_PROJECT_PATH)/Logical/GUI/TouchPads/NumPad.tpr
-	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/Projects/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
+	 $(VCC) -f '$<' -o '$@' -l '$(AS_PROJECT_PATH)/Logical/VCShared/Languages.vcr' -cv '$(AS_PROJECT_PATH)/Logical/VCShared/ControlVersion.cvinfo' -pal '$(PALFILE_GUI)' $(VCCFLAGS_GUI) -prj 'C:/projects/KRBO-02-16/Lab3/Logical/GUI' -p GUI -so $(VC_STATIC_OPTIONS_GUI) -vcr 4520 -sfas
 
 
 #Touch Pads END

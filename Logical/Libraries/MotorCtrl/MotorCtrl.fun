@@ -56,7 +56,7 @@ FUNCTION_BLOCK FB_Axis
 		ForceSwitchA : BOOL;
 		ForceSwitchB : BOOL;
 		Counter : INT;
-		UserResetCounter : USINT;
+		UserResetCounter : BOOL;
 	END_VAR
 	VAR_OUTPUT
 		FeedbackSpeed : REAL;

@@ -1,8 +1,8 @@
 /* Automation Studio generated header file */
 /* Do not edit ! */
 
-#ifndef _BUR_1575215764_1_
-#define _BUR_1575215764_1_
+#ifndef _BUR_1575277044_1_
+#define _BUR_1575277044_1_
 
 #include <bur/plctypes.h>
 
@@ -13,10 +13,10 @@
 
 
 /* Variables */
-_BUR_LOCAL unsigned short pwm_period;
+_BUR_LOCAL unsigned short PWM_Period;
 _BUR_LOCAL struct FB_Regulator fb_regulator;
-_BUR_LOCAL signed short coil_pwm_value;
-_BUR_LOCAL plcbit coil_powered;
+_BUR_LOCAL signed short CoilPWM;
+_BUR_LOCAL plcbit CoilPowered;
 _BUR_LOCAL struct FB_Axis axis_X;
 
 
@@ -34,5 +34,5 @@ __asm__(".ascii \"iecfile \\\"Logical/Libraries/MotorCtrl/MotorCtrl.fun\\\" scop
 __asm__(".previous");
 
 
-#endif /* _BUR_1575215764_1_ */
+#endif /* _BUR_1575277044_1_ */
 

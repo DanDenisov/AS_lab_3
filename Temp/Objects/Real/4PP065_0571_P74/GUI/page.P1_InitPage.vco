@@ -93,9 +93,9 @@
             <UInt32 Name="ControlID">0</UInt32>
             <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.UserSpeed]</Reference>
             <Reference Name="CurrentDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.UserSpeed]</Reference>
-            <Double Name="MinValue">-100</Double>
+            <Double Name="MinValue">-6500</Double>
             <UInt32 Name="MinDatapoint">4294967295</UInt32>
-            <Double Name="MaxValue">100</Double>
+            <Double Name="MaxValue">6500</Double>
             <UInt32 Name="MaxDatapoint">4294967295</UInt32>
             <UInt32 Name="SimulationValue">0</UInt32>
             <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x0000101F].StyleClass[Slider]</Reference>
@@ -187,7 +187,7 @@
             <UInt32 Name="Right">308</UInt32>
             <UInt32 Name="Bottom">129</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
-            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.counter]</Reference>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.Counter]</Reference>
             <UInt32 Name="MinDatapoint">4294967295</UInt32>
             <UInt32 Name="MaxDatapoint">4294967295</UInt32>
             <UInt32 Name="TeachDatapoint">4294967295</UInt32>
@@ -496,189 +496,6 @@
               <UInt16 Name="Size">0</UInt16>
             </Group>
           </Object>
-          <Object Name="Button_6" ClsId="0x1002" Version="1" Type="CTRL" RefString="Source[local].Page[P1_InitPage].Layer[Default].Control[Button_6]">
-            <UInt32 Name="Left">198</UInt32>
-            <UInt32 Name="Top">175</UInt32>
-            <UInt32 Name="Right">307</UInt32>
-            <UInt32 Name="Bottom">233</UInt32>
-            <UInt16 Name="KeyMatrixOffset">65535</UInt16>
-            <UInt16 Name="Reserved">0</UInt16>
-            <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[key_stop]</Reference>
-            <UInt32 Name="ControlID">0</UInt32>
-            <UInt32 Name="Script1">4294967295</UInt32>
-            <UInt32 Name="Script2">4294967295</UInt32>
-            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001002].StyleClass[BasicButton]</Reference>
-            <UInt16 Name="StyleTableSize">94</UInt16>
-            <UInt16 Name="Reserved">0</UInt16>
-            <Group Name="AlignmentHorizontal">
-              <UInt16 Name="Offset">8</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">1</Byte>
-            </Group>
-            <Group Name="Multiline">
-              <UInt16 Name="Offset">13</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">0</Byte>
-            </Group>
-            <Group Name="ForeColor">
-              <UInt16 Name="Offset">24</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">44</UInt32>
-            </Group>
-            <Group Name="PressedForeColor">
-              <UInt16 Name="Offset">32</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">44</UInt32>
-            </Group>
-            <Group Name="TextGroup">
-              <UInt16 Name="Offset">44</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="TG">Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded]</Reference>
-            </Group>
-            <Group Name="PressedTextGroup">
-              <UInt16 Name="Offset">48</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="TG">Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded]</Reference>
-            </Group>
-            <Group Name="TextIndex">
-              <UInt16 Name="Offset">52</UInt16>
-              <UInt16 Name="Size">2</UInt16>
-              <UInt16 Name="Data">15</UInt16>
-            </Group>
-            <Group Name="PressedTextIndex">
-              <UInt16 Name="Offset">54</UInt16>
-              <UInt16 Name="Size">2</UInt16>
-              <UInt16 Name="Data">15</UInt16>
-            </Group>
-            <Group Name="PressedBitmapSource">
-              <UInt16 Name="Offset">66</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">255</Byte>
-            </Group>
-            <Group Name="TextSource">
-              <UInt16 Name="Offset">97</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">2</Byte>
-            </Group>
-            <Group Name="BitmapSource">
-              <UInt16 Name="Offset">98</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">255</Byte>
-            </Group>
-            <Group Name="PressedTextSource">
-              <UInt16 Name="Offset">99</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">2</Byte>
-            </Group>
-            <Group Name="TextIndexDatapoint">
-              <UInt16 Name="Offset">100</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">4294967295</UInt32>
-            </Group>
-            <Group Name="BitmapIndexDatapoint">
-              <UInt16 Name="Offset">104</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">4294967295</UInt32>
-            </Group>
-            <Group Name="End Marker">
-              <UInt16 Name="Offset">65535</UInt16>
-              <UInt16 Name="Size">0</UInt16>
-            </Group>
-          </Object>
-          <Object Name="Button_7" ClsId="0x1002" Version="1" Type="CTRL" RefString="Source[local].Page[P1_InitPage].Layer[Default].Control[Button_7]">
-            <UInt32 Name="Left">9</UInt32>
-            <UInt32 Name="Top">196</UInt32>
-            <UInt32 Name="Right">97</UInt32>
-            <UInt32 Name="Bottom">233</UInt32>
-            <UInt16 Name="KeyMatrixOffset">65535</UInt16>
-            <UInt16 Name="Reserved">0</UInt16>
-            <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_11]</Reference>
-            <UInt32 Name="ControlID">0</UInt32>
-            <UInt32 Name="Script1">4294967295</UInt32>
-            <UInt32 Name="Script2">4294967295</UInt32>
-            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001002].StyleClass[Empty]</Reference>
-            <UInt16 Name="StyleTableSize">102</UInt16>
-            <UInt16 Name="Reserved">0</UInt16>
-            <Group Name="AlignmentHorizontal">
-              <UInt16 Name="Offset">8</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">1</Byte>
-            </Group>
-            <Group Name="Multiline">
-              <UInt16 Name="Offset">13</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">2</Byte>
-            </Group>
-            <Group Name="PressedForeColor">
-              <UInt16 Name="Offset">32</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">15</UInt32>
-            </Group>
-            <Group Name="PressedBackColor">
-              <UInt16 Name="Offset">36</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">254</UInt32>
-            </Group>
-            <Group Name="Font">
-              <UInt16 Name="Offset">40</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="FNT">Source[local].Font[Arial9pxBold]</Reference>
-            </Group>
-            <Group Name="TextGroup">
-              <UInt16 Name="Offset">44</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="TG">Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded]</Reference>
-            </Group>
-            <Group Name="PressedTextGroup">
-              <UInt16 Name="Offset">48</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="TG">Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded]</Reference>
-            </Group>
-            <Group Name="TextIndex">
-              <UInt16 Name="Offset">52</UInt16>
-              <UInt16 Name="Size">2</UInt16>
-              <UInt16 Name="Data">19</UInt16>
-            </Group>
-            <Group Name="PressedTextIndex">
-              <UInt16 Name="Offset">54</UInt16>
-              <UInt16 Name="Size">2</UInt16>
-              <UInt16 Name="Data">19</UInt16>
-            </Group>
-            <Group Name="PressedBitmapSource">
-              <UInt16 Name="Offset">66</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">255</Byte>
-            </Group>
-            <Group Name="TextSource">
-              <UInt16 Name="Offset">97</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">2</Byte>
-            </Group>
-            <Group Name="BitmapSource">
-              <UInt16 Name="Offset">98</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">255</Byte>
-            </Group>
-            <Group Name="PressedTextSource">
-              <UInt16 Name="Offset">99</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">2</Byte>
-            </Group>
-            <Group Name="TextIndexDatapoint">
-              <UInt16 Name="Offset">100</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">4294967295</UInt32>
-            </Group>
-            <Group Name="BitmapIndexDatapoint">
-              <UInt16 Name="Offset">104</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <UInt32 Name="Data">4294967295</UInt32>
-            </Group>
-            <Group Name="End Marker">
-              <UInt16 Name="Offset">65535</UInt16>
-              <UInt16 Name="Size">0</UInt16>
-            </Group>
-          </Object>
           <Object Name="Button_1" ClsId="0x1002" Version="1" Type="CTRL" RefString="Source[local].Page[P1_InitPage].Layer[Default].Control[Button_1]">
             <UInt32 Name="Left">104</UInt32>
             <UInt32 Name="Top">152</UInt32>
@@ -859,7 +676,7 @@
             <UInt32 Name="Right">308</UInt32>
             <UInt32 Name="Bottom">167</UInt32>
             <UInt32 Name="ValueMode">0</UInt32>
-            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.pwm_value]</Reference>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.PWM]</Reference>
             <UInt32 Name="MinDatapoint">4294967295</UInt32>
             <UInt32 Name="MaxDatapoint">4294967295</UInt32>
             <UInt32 Name="TeachDatapoint">4294967295</UInt32>
@@ -884,30 +701,26 @@
               <UInt16 Name="Size">0</UInt16>
             </Group>
           </Object>
-          <Object Name="Text_8" ClsId="0x1004" Version="1" Type="CTRL" RefString="Source[local].Page[P1_InitPage].Layer[Default].Control[Text_8]">
-            <UInt32 Name="Left">188</UInt32>
-            <UInt32 Name="Top">39</UInt32>
-            <UInt32 Name="Right">304</UInt32>
-            <UInt32 Name="Bottom">67</UInt32>
-            <UInt32 Name="IndexDatapoint">4294967295</UInt32>
+          <Object Name="Numeric_1" ClsId="0x1007" Version="1" Type="CTRL" RefString="Source[local].Page[P1_InitPage].Layer[Default].Control[Numeric_1]">
+            <UInt32 Name="Left">67</UInt32>
+            <UInt32 Name="Top">44</UInt32>
+            <UInt32 Name="Right">101</UInt32>
+            <UInt32 Name="Bottom">61</UInt32>
+            <UInt32 Name="ValueMode">0</UInt32>
+            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.UserSpeed]</Reference>
+            <UInt32 Name="MinDatapoint">4294967295</UInt32>
+            <UInt32 Name="MaxDatapoint">4294967295</UInt32>
+            <UInt32 Name="TeachDatapoint">4294967295</UInt32>
             <UInt32 Name="ControlID">0</UInt32>
-            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001004].StyleClass[Empty]</Reference>
-            <UInt16 Name="StyleTableSize">22</UInt16>
+            <Double Name="MinValue">-1.7976931348623157E+308</Double>
+            <Double Name="MaxValue">1.7976931348623157E+308</Double>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001007].StyleClass[Empty]</Reference>
+            <UInt16 Name="StyleTableSize">9</UInt16>
             <UInt16 Name="Reserved">0</UInt16>
-            <Group Name="AlignmentVertical">
-              <UInt16 Name="Offset">22</UInt16>
-              <UInt16 Name="Size">1</UInt16>
-              <Byte Name="Data">1</Byte>
-            </Group>
-            <Group Name="TextSource">
-              <UInt16 Name="Offset">40</UInt16>
+            <Group Name="AlignmentHorizontal">
+              <UInt16 Name="Offset">26</UInt16>
               <UInt16 Name="Size">1</UInt16>
               <Byte Name="Data">0</Byte>
-            </Group>
-            <Group Name="TextDatapoint">
-              <UInt16 Name="Offset">52</UInt16>
-              <UInt16 Name="Size">4</UInt16>
-              <Reference Name="Data" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.StatusString]</Reference>
             </Group>
             <Group Name="End Marker">
               <UInt16 Name="Offset">65535</UInt16>
@@ -915,10 +728,10 @@
             </Group>
           </Object>
           <Object Name="Button_4" ClsId="0x1002" Version="1" Type="CTRL" RefString="Source[local].Page[P1_InitPage].Layer[Default].Control[Button_4]">
-            <UInt32 Name="Left">105</UInt32>
-            <UInt32 Name="Top">196</UInt32>
-            <UInt32 Name="Right">188</UInt32>
-            <UInt32 Name="Bottom">233</UInt32>
+            <UInt32 Name="Left">198</UInt32>
+            <UInt32 Name="Top">177</UInt32>
+            <UInt32 Name="Right">307</UInt32>
+            <UInt32 Name="Bottom">232</UInt32>
             <UInt16 Name="KeyMatrixOffset">65535</UInt16>
             <UInt16 Name="Reserved">0</UInt16>
             <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_4]</Reference>
@@ -966,12 +779,12 @@
             <Group Name="TextIndex">
               <UInt16 Name="Offset">52</UInt16>
               <UInt16 Name="Size">2</UInt16>
-              <UInt16 Name="Data">13</UInt16>
+              <UInt16 Name="Data">16</UInt16>
             </Group>
             <Group Name="PressedTextIndex">
               <UInt16 Name="Offset">54</UInt16>
               <UInt16 Name="Size">2</UInt16>
-              <UInt16 Name="Data">13</UInt16>
+              <UInt16 Name="Data">16</UInt16>
             </Group>
             <Group Name="PressedBitmapSource">
               <UInt16 Name="Offset">66</UInt16>
@@ -1008,26 +821,84 @@
               <UInt16 Name="Size">0</UInt16>
             </Group>
           </Object>
-          <Object Name="Numeric_1" ClsId="0x1007" Version="1" Type="CTRL" RefString="Source[local].Page[P1_InitPage].Layer[Default].Control[Numeric_1]">
-            <UInt32 Name="Left">67</UInt32>
-            <UInt32 Name="Top">44</UInt32>
-            <UInt32 Name="Right">101</UInt32>
-            <UInt32 Name="Bottom">61</UInt32>
-            <UInt32 Name="ValueMode">0</UInt32>
-            <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.UserSpeed]</Reference>
-            <UInt32 Name="MinDatapoint">4294967295</UInt32>
-            <UInt32 Name="MaxDatapoint">4294967295</UInt32>
-            <UInt32 Name="TeachDatapoint">4294967295</UInt32>
+          <Object Name="Button_5" ClsId="0x1002" Version="1" Type="CTRL" RefString="Source[local].Page[P1_InitPage].Layer[Default].Control[Button_5]">
+            <UInt32 Name="Left">9</UInt32>
+            <UInt32 Name="Top">196</UInt32>
+            <UInt32 Name="Right">97</UInt32>
+            <UInt32 Name="Bottom">232</UInt32>
+            <UInt16 Name="KeyMatrixOffset">65535</UInt16>
+            <UInt16 Name="Reserved">0</UInt16>
+            <Reference Name="VirtualKey" Type="VKEY">Source[local].VirtualKey[%embVirtualKey_11]</Reference>
             <UInt32 Name="ControlID">0</UInt32>
-            <Double Name="MinValue">-1.7976931348623157E+308</Double>
-            <Double Name="MaxValue">1.7976931348623157E+308</Double>
-            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001007].StyleClass[Empty]</Reference>
-            <UInt16 Name="StyleTableSize">9</UInt16>
+            <UInt32 Name="Script1">4294967295</UInt32>
+            <UInt32 Name="Script2">4294967295</UInt32>
+            <Reference Name="StyleClass" Type="SC">Source[local].StyleGroup[0x00001002].StyleClass[Empty]</Reference>
+            <UInt16 Name="StyleTableSize">86</UInt16>
             <UInt16 Name="Reserved">0</UInt16>
             <Group Name="AlignmentHorizontal">
-              <UInt16 Name="Offset">26</UInt16>
+              <UInt16 Name="Offset">8</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">1</Byte>
+            </Group>
+            <Group Name="Multiline">
+              <UInt16 Name="Offset">13</UInt16>
               <UInt16 Name="Size">1</UInt16>
               <Byte Name="Data">0</Byte>
+            </Group>
+            <Group Name="Font">
+              <UInt16 Name="Offset">40</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="FNT">Source[local].Font[Arial9pxBold]</Reference>
+            </Group>
+            <Group Name="TextGroup">
+              <UInt16 Name="Offset">44</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="TG">Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded]</Reference>
+            </Group>
+            <Group Name="PressedTextGroup">
+              <UInt16 Name="Offset">48</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <Reference Name="Data" Type="TG">Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded]</Reference>
+            </Group>
+            <Group Name="TextIndex">
+              <UInt16 Name="Offset">52</UInt16>
+              <UInt16 Name="Size">2</UInt16>
+              <UInt16 Name="Data">11</UInt16>
+            </Group>
+            <Group Name="PressedTextIndex">
+              <UInt16 Name="Offset">54</UInt16>
+              <UInt16 Name="Size">2</UInt16>
+              <UInt16 Name="Data">11</UInt16>
+            </Group>
+            <Group Name="PressedBitmapSource">
+              <UInt16 Name="Offset">66</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">255</Byte>
+            </Group>
+            <Group Name="TextSource">
+              <UInt16 Name="Offset">97</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">2</Byte>
+            </Group>
+            <Group Name="BitmapSource">
+              <UInt16 Name="Offset">98</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">255</Byte>
+            </Group>
+            <Group Name="PressedTextSource">
+              <UInt16 Name="Offset">99</UInt16>
+              <UInt16 Name="Size">1</UInt16>
+              <Byte Name="Data">2</Byte>
+            </Group>
+            <Group Name="TextIndexDatapoint">
+              <UInt16 Name="Offset">100</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <UInt32 Name="Data">4294967295</UInt32>
+            </Group>
+            <Group Name="BitmapIndexDatapoint">
+              <UInt16 Name="Offset">104</UInt16>
+              <UInt16 Name="Size">4</UInt16>
+              <UInt32 Name="Data">4294967295</UInt32>
             </Group>
             <Group Name="End Marker">
               <UInt16 Name="Offset">65535</UInt16>
@@ -1057,7 +928,7 @@
               <Double Name="SetValue">1</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.coil_powered]</Reference>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.CoilPowered]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
               <Byte Name="Mode">1</Byte>
               <Byte Name="Reserved">0</Byte>
@@ -1197,15 +1068,14 @@
               <UInt16 Name="Reserved">0</UInt16>
               <UInt32 Name="LockingDatapoint">4294967295</UInt32>
               <UInt32 Name="LockingLevel">0</UInt32>
-              <Double Name="SetValue">1</Double>
+              <Double Name="SetValue">0</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceStop]</Reference>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.State]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
-              <Byte Name="Mode">1</Byte>
+              <Byte Name="Mode">0</Byte>
               <Byte Name="Reserved">0</Byte>
-              <Byte Name="Reserved1">0</Byte>
-              <Byte Name="Reserved2">0</Byte>
+              <UInt16 Name="Reserved1">0</UInt16>
             </Group>
           </Object>
           <Object Name="set_current_0" ClsId="0x0" Version="1" Type="VKEY" RefString="Source[local].VirtualKey[set_current_0]">
@@ -1312,32 +1182,6 @@
               <UInt16 Name="Reserved1">0</UInt16>
             </Group>
           </Object>
-          <Object Name="%embVirtualKey_11" ClsId="0x0" Version="1" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_11]">
-            <Group Name="LedMapping">
-              <UInt32 Name="Datapoint">4294967295</UInt32>
-              <Byte Name="Mode">0</Byte>
-              <Byte Name="Active">0</Byte>
-              <UInt16 Name="Reserved">0</UInt16>
-            </Group>
-            <Group Name="KeyMapping">
-              <UInt32 Name="KeyActionCount">1</UInt32>
-              <Int32 Name="ActionID">353</Int32>
-              <UInt32 Name="ActionDataSize">36</UInt32>
-              <Byte Name="Locking">0</Byte>
-              <Byte Name="Reserved">0</Byte>
-              <UInt16 Name="Reserved">0</UInt16>
-              <UInt32 Name="LockingDatapoint">4294967295</UInt32>
-              <UInt32 Name="LockingLevel">0</UInt32>
-              <Double Name="SetValue">1</Double>
-              <Double Name="ResetValue">0</Double>
-              <Double Name="CompletionValue">0</Double>
-              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.state]</Reference>
-              <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
-              <Byte Name="Mode">0</Byte>
-              <Byte Name="Reserved">0</Byte>
-              <UInt16 Name="Reserved1">0</UInt16>
-            </Group>
-          </Object>
           <Object Name="key_switchA" ClsId="0x0" Version="1" Type="VKEY" RefString="Source[local].VirtualKey[key_switchA]">
             <Group Name="LedMapping">
               <UInt32 Name="Datapoint">4294967295</UInt32>
@@ -1357,11 +1201,12 @@
               <Double Name="SetValue">1</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.endswitch_a_reached]</Reference>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceSwitchA]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
-              <Byte Name="Mode">0</Byte>
+              <Byte Name="Mode">1</Byte>
               <Byte Name="Reserved">0</Byte>
-              <UInt16 Name="Reserved1">0</UInt16>
+              <Byte Name="Reserved1">0</Byte>
+              <Byte Name="Reserved2">0</Byte>
             </Group>
           </Object>
           <Object Name="%embVirtualKey_1" ClsId="0x0" Version="1" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_1]">
@@ -1383,11 +1228,12 @@
               <Double Name="SetValue">1</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <UInt32 Name="ValueDatapoint">4294967295</UInt32>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceSwitchB]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
-              <Byte Name="Mode">0</Byte>
+              <Byte Name="Mode">1</Byte>
               <Byte Name="Reserved">0</Byte>
-              <UInt16 Name="Reserved1">0</UInt16>
+              <Byte Name="Reserved1">0</Byte>
+              <Byte Name="Reserved2">0</Byte>
             </Group>
           </Object>
           <Object Name="%embVirtualKey_4" ClsId="0x0" Version="1" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_4]">
@@ -1409,7 +1255,34 @@
               <Double Name="SetValue">1</Double>
               <Double Name="ResetValue">0</Double>
               <Double Name="CompletionValue">0</Double>
-              <UInt32 Name="ValueDatapoint">4294967295</UInt32>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.Manual]</Reference>
+              <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
+              <Byte Name="Mode">1</Byte>
+              <Byte Name="Reserved">0</Byte>
+              <Byte Name="Reserved1">0</Byte>
+              <Byte Name="Reserved2">0</Byte>
+            </Group>
+          </Object>
+          <Object Name="%embVirtualKey_11" ClsId="0x0" Version="1" Type="VKEY" RefString="Source[local].VirtualKey[%embVirtualKey_11]">
+            <Group Name="LedMapping">
+              <UInt32 Name="Datapoint">4294967295</UInt32>
+              <Byte Name="Mode">0</Byte>
+              <Byte Name="Active">0</Byte>
+              <UInt16 Name="Reserved">0</UInt16>
+            </Group>
+            <Group Name="KeyMapping">
+              <UInt32 Name="KeyActionCount">1</UInt32>
+              <Int32 Name="ActionID">353</Int32>
+              <UInt32 Name="ActionDataSize">36</UInt32>
+              <Byte Name="Locking">0</Byte>
+              <Byte Name="Reserved">0</Byte>
+              <UInt16 Name="Reserved">0</UInt16>
+              <UInt32 Name="LockingDatapoint">4294967295</UInt32>
+              <UInt32 Name="LockingLevel">0</UInt32>
+              <Double Name="SetValue">1</Double>
+              <Double Name="ResetValue">0</Double>
+              <Double Name="CompletionValue">0</Double>
+              <Reference Name="ValueDatapoint" Type="DP">Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.UserResetCounter]</Reference>
               <UInt32 Name="CompletionDatapoint">4294967295</UInt32>
               <Byte Name="Mode">0</Byte>
               <Byte Name="Reserved">0</Byte>
@@ -1421,7 +1294,7 @@
       <Folder Name="POBJ">
         <Object Name="Default" ClsId="0x401" Version="1" Type="LAY" RefString="Source[local].Page[P1_InitPage].Layer[Default]">
           <Reference Name="StatusDP" Type="DP">None</Reference>
-          <UInt32 Name="CtrlCount">19</UInt32>
+          <UInt32 Name="CtrlCount">17</UInt32>
           <Reference Name="DateTime_1" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[DateTime_1]</Reference>
           <Reference Name="Text_1" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Text_1]</Reference>
           <Reference Name="Slider_1" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Slider_1]</Reference>
@@ -1432,15 +1305,13 @@
           <Reference Name="Button_2" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Button_2]</Reference>
           <Reference Name="Text_4" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Text_4]</Reference>
           <Reference Name="Button_3" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Button_3]</Reference>
-          <Reference Name="Button_6" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Button_6]</Reference>
-          <Reference Name="Button_7" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Button_7]</Reference>
           <Reference Name="Button_1" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Button_1]</Reference>
           <Reference Name="Text_5" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Text_5]</Reference>
           <Reference Name="Text_6" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Text_6]</Reference>
           <Reference Name="Numeric_4" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Numeric_4]</Reference>
-          <Reference Name="Text_8" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Text_8]</Reference>
-          <Reference Name="Button_4" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Button_4]</Reference>
           <Reference Name="Numeric_1" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Numeric_1]</Reference>
+          <Reference Name="Button_4" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Button_4]</Reference>
+          <Reference Name="Button_5" Type="CTRL">Source[local].Page[P1_InitPage].Layer[Default].Control[Button_5]</Reference>
         </Object>
       </Folder>
     </Folder>
@@ -1449,7 +1320,7 @@
     <Folder Name="PP1_InitPage.LDefault" TargetIndex="Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded]">
       <Object Name="Embedded" ClsId="0x304" Version="1" Type="TG" RefString="Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded]">
         <UInt32 Name="NumberOfTags">0</UInt32>
-        <UInt32 Name="NumberOfTexts">13</UInt32>
+        <UInt32 Name="NumberOfTexts">12</UInt32>
         <Table Name="TextMap" Cols="2">
           <TableHeader>
             <Column Name="UserIndex" />
@@ -1484,16 +1355,12 @@
             <UInt32 Name="TextIndex">95175</UInt32>
           </TableRow>
           <TableRow>
-            <UInt32 Name="UserIndex">13</UInt32>
-            <UInt32 Name="TextIndex">96098</UInt32>
+            <UInt32 Name="UserIndex">11</UInt32>
+            <UInt32 Name="TextIndex">96531</UInt32>
           </TableRow>
           <TableRow>
-            <UInt32 Name="UserIndex">15</UInt32>
-            <UInt32 Name="TextIndex">95179</UInt32>
-          </TableRow>
-          <TableRow>
-            <UInt32 Name="UserIndex">19</UInt32>
-            <UInt32 Name="TextIndex">95654</UInt32>
+            <UInt32 Name="UserIndex">16</UInt32>
+            <UInt32 Name="TextIndex">96317</UInt32>
           </TableRow>
           <TableRow>
             <UInt32 Name="UserIndex">22</UInt32>
@@ -1516,7 +1383,7 @@
       <Folder Name="TextGroups">
         <Folder Name="POBJ">
           <Object Name="TextGroupData" ClsId="0x303" Version="1" TargetIndex="Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded]" Type="TG" RefString="Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded].Language[en]">
-            <UInt32 Name="NumberOfTexts">13</UInt32>
+            <UInt32 Name="NumberOfTexts">12</UInt32>
             <Table Name="TextOffsets" Cols="5">
               <TableHeader>
                 <Column Name="TextIndex" />
@@ -1527,91 +1394,84 @@
               </TableHeader>
               <TableRow>
                 <UInt32 Name="TextIndex">95169</UInt32>
-                <UInt32 Name="TextOffset">160</UInt32>
+                <UInt32 Name="TextOffset">148</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95170</UInt32>
-                <UInt32 Name="TextOffset">204</UInt32>
+                <UInt32 Name="TextOffset">192</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95171</UInt32>
-                <UInt32 Name="TextOffset">236</UInt32>
+                <UInt32 Name="TextOffset">224</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95172</UInt32>
-                <UInt32 Name="TextOffset">250</UInt32>
+                <UInt32 Name="TextOffset">238</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95173</UInt32>
-                <UInt32 Name="TextOffset">270</UInt32>
+                <UInt32 Name="TextOffset">258</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95174</UInt32>
-                <UInt32 Name="TextOffset">300</UInt32>
+                <UInt32 Name="TextOffset">288</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95175</UInt32>
-                <UInt32 Name="TextOffset">328</UInt32>
-                <Byte Name="SnippetCount">0</Byte>
-                <Byte Name="Reserved">0</Byte>
-                <UInt16 Name="Reserved">0</UInt16>
-              </TableRow>
-              <TableRow>
-                <UInt32 Name="TextIndex">95179</UInt32>
-                <UInt32 Name="TextOffset">364</UInt32>
-                <Byte Name="SnippetCount">0</Byte>
-                <Byte Name="Reserved">0</Byte>
-                <UInt16 Name="Reserved">0</UInt16>
-              </TableRow>
-              <TableRow>
-                <UInt32 Name="TextIndex">95654</UInt32>
-                <UInt32 Name="TextOffset">384</UInt32>
+                <UInt32 Name="TextOffset">316</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95876</UInt32>
-                <UInt32 Name="TextOffset">416</UInt32>
+                <UInt32 Name="TextOffset">352</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95878</UInt32>
-                <UInt32 Name="TextOffset">452</UInt32>
+                <UInt32 Name="TextOffset">388</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95879</UInt32>
-                <UInt32 Name="TextOffset">470</UInt32>
+                <UInt32 Name="TextOffset">406</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">96098</UInt32>
-                <UInt32 Name="TextOffset">480</UInt32>
+                <UInt32 Name="TextIndex">96317</UInt32>
+                <UInt32 Name="TextOffset">416</UInt32>
+                <Byte Name="SnippetCount">0</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">96531</UInt32>
+                <UInt32 Name="TextOffset">452</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
@@ -1625,13 +1485,13 @@
               <String Name="Text" Encoding="Unicode">"Подать питание"</String>
               <String Name="Text" Encoding="Unicode">"Снять питание"</String>
               <String Name="Text" Encoding="Unicode">"Концевой датчик A"</String>
-              <String Name="Text" Encoding="Unicode">"Остановка"</String>
-              <String Name="Text" Encoding="Unicode">"Рефериро-
-вание"</String>
               <String Name="Text" Encoding="Unicode">"Концевой датчик B"</String>
               <String Name="Text" Encoding="Unicode">"Уставка:"</String>
               <String Name="Text" Encoding="Unicode">"ШИМ:"</String>
-              <String Name="Text" Encoding="Unicode">"Движение"</String>
+              <String Name="Text" Encoding="Unicode">"Ручное
+управление"</String>
+              <String Name="Text" Encoding="Unicode">"Сбросить
+счетчик"</String>
             </Group>
           </Object>
         </Folder>
@@ -1643,7 +1503,7 @@
       <Folder Name="TextGroups">
         <Folder Name="POBJ">
           <Object Name="TextGroupData" ClsId="0x303" Version="1" TargetIndex="Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded]" Type="TG" RefString="Source[local].Page[P1_InitPage].Layer[Default].TextGroup[Embedded].Language[de]">
-            <UInt32 Name="NumberOfTexts">13</UInt32>
+            <UInt32 Name="NumberOfTexts">12</UInt32>
             <Table Name="TextOffsets" Cols="5">
               <TableHeader>
                 <Column Name="TextIndex" />
@@ -1654,98 +1514,90 @@
               </TableHeader>
               <TableRow>
                 <UInt32 Name="TextIndex">95169</UInt32>
-                <UInt32 Name="TextOffset">160</UInt32>
+                <UInt32 Name="TextOffset">148</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95170</UInt32>
-                <UInt32 Name="TextOffset">162</UInt32>
+                <UInt32 Name="TextOffset">150</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95171</UInt32>
-                <UInt32 Name="TextOffset">164</UInt32>
+                <UInt32 Name="TextOffset">152</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95172</UInt32>
-                <UInt32 Name="TextOffset">166</UInt32>
+                <UInt32 Name="TextOffset">154</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95173</UInt32>
-                <UInt32 Name="TextOffset">168</UInt32>
+                <UInt32 Name="TextOffset">156</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95174</UInt32>
-                <UInt32 Name="TextOffset">170</UInt32>
+                <UInt32 Name="TextOffset">158</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95175</UInt32>
-                <UInt32 Name="TextOffset">172</UInt32>
-                <Byte Name="SnippetCount">0</Byte>
-                <Byte Name="Reserved">0</Byte>
-                <UInt16 Name="Reserved">0</UInt16>
-              </TableRow>
-              <TableRow>
-                <UInt32 Name="TextIndex">95179</UInt32>
-                <UInt32 Name="TextOffset">174</UInt32>
-                <Byte Name="SnippetCount">0</Byte>
-                <Byte Name="Reserved">0</Byte>
-                <UInt16 Name="Reserved">0</UInt16>
-              </TableRow>
-              <TableRow>
-                <UInt32 Name="TextIndex">95654</UInt32>
-                <UInt32 Name="TextOffset">176</UInt32>
+                <UInt32 Name="TextOffset">160</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95876</UInt32>
-                <UInt32 Name="TextOffset">178</UInt32>
+                <UInt32 Name="TextOffset">162</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95878</UInt32>
-                <UInt32 Name="TextOffset">180</UInt32>
+                <UInt32 Name="TextOffset">164</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
                 <UInt32 Name="TextIndex">95879</UInt32>
-                <UInt32 Name="TextOffset">182</UInt32>
+                <UInt32 Name="TextOffset">166</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
               <TableRow>
-                <UInt32 Name="TextIndex">96098</UInt32>
-                <UInt32 Name="TextOffset">184</UInt32>
+                <UInt32 Name="TextIndex">96317</UInt32>
+                <UInt32 Name="TextOffset">168</UInt32>
+                <Byte Name="SnippetCount">0</Byte>
+                <Byte Name="Reserved">0</Byte>
+                <UInt16 Name="Reserved">0</UInt16>
+              </TableRow>
+              <TableRow>
+                <UInt32 Name="TextIndex">96531</UInt32>
+                <UInt32 Name="TextOffset">170</UInt32>
                 <Byte Name="SnippetCount">0</Byte>
                 <Byte Name="Reserved">0</Byte>
                 <UInt16 Name="Reserved">0</UInt16>
               </TableRow>
             </Table>
             <Group Name="Texts">
-              <String Name="Text" Encoding="Unicode">""</String>
               <String Name="Text" Encoding="Unicode">""</String>
               <String Name="Text" Encoding="Unicode">""</String>
               <String Name="Text" Encoding="Unicode">""</String>

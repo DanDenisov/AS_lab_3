@@ -32,12 +32,11 @@
           <Text ID="95173" Value="Подать питание"/>
           <Text ID="95174" Value="Снять питание"/>
           <Text ID="95175" Value="Концевой датчик A"/>
-          <Text ID="95179" Value="Остановка"/>
-          <Text ID="95654" Value="Рефериро-\nвание"/>
           <Text ID="95876" Value="Концевой датчик B"/>
           <Text ID="95878" Value="Уставка:"/>
           <Text ID="95879" Value="ШИМ:"/>
-          <Text ID="96098" Value="Движение"/>
+          <Text ID="96317" Value="Ручное\nуправление"/>
+          <Text ID="96531" Value="Сбросить\nсчетчик"/>
         </TextLayer>
         <TextLayer LanguageId="de">
           <Text ID="95169" Value=""/>
@@ -47,12 +46,11 @@
           <Text ID="95173" Value=""/>
           <Text ID="95174" Value=""/>
           <Text ID="95175" Value=""/>
-          <Text ID="95179" Value=""/>
-          <Text ID="95654" Value=""/>
           <Text ID="95876" Value=""/>
           <Text ID="95878" Value=""/>
           <Text ID="95879" Value=""/>
-          <Text ID="96098" Value=""/>
+          <Text ID="96317" Value=""/>
+          <Text ID="96531" Value=""/>
         </TextLayer>
         <IndexMap>
           <Index ID="95169" Value="4"/>
@@ -62,12 +60,11 @@
           <Index ID="95173" Value="2"/>
           <Index ID="95174" Value="3"/>
           <Index ID="95175" Value="9"/>
-          <Index ID="95179" Value="15"/>
-          <Index ID="95654" Value="19"/>
           <Index ID="95876" Value="22"/>
           <Index ID="95878" Value="25"/>
           <Index ID="95879" Value="26"/>
-          <Index ID="96098" Value="13"/>
+          <Index ID="96317" Value="16"/>
+          <Index ID="96531" Value="11"/>
         </IndexMap>
       </TextGroup>
       <Controls>
@@ -116,9 +113,9 @@
           <Property Name="InputUpdateDatapoints" Value="Immediate"/>
           <Property Name="Left" Value="9"/>
           <Property Name="MaxDatapoint" Value="None"/>
-          <Property Name="MaxValue" Value="100"/>
+          <Property Name="MaxValue" Value="6500"/>
           <Property Name="MinDatapoint" Value="None"/>
-          <Property Name="MinValue" Value="-100"/>
+          <Property Name="MinValue" Value="-6500"/>
           <Property Name="PitchLinesStyle" Value="Both"/>
           <Property Name="SimulationValue" Value="0"/>
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Slider]"/>
@@ -157,7 +154,7 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="110"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.counter]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.Counter]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="46"/>
         </Control>
@@ -264,57 +261,6 @@
           <Property Name="VirtualKey" Value="Source[local].VirtualKey[key_switchA]"/>
           <Property Name="Width" Value="89"/>
         </Control>
-        <Control ClassId="0x00001002" Name="Button_6">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="None"/>
-          <Property Name="ForeColor" Value="44"/>
-          <Property Name="Height" Value="59"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="198"/>
-          <Property Name="Multiline" Value="Automatic"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedForeColor" Value="44"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[BasicButton]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="15"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="175"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[key_stop]"/>
-          <Property Name="Width" Value="110"/>
-        </Control>
-        <Control ClassId="0x00001002" Name="Button_7">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
-          <Property Name="Font" Value="Source[local].Font[Arial9pxBold]"/>
-          <Property Name="Height" Value="38"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="9"/>
-          <Property Name="Multiline" Value="Manual"/>
-          <Property Name="PressedBackColor" Value="254"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedForeColor" Value="15"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="19"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="196"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
-          <Property Name="Width" Value="89"/>
-        </Control>
         <Control ClassId="0x00001002" Name="Button_1">
           <Property Name="AlignmentHorizontal" Value="Center"/>
           <Property Name="BitmapIndexDatapoint" Value="None"/>
@@ -388,49 +334,9 @@
           <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Output]"/>
           <Property Name="TeachDatapoint" Value="None"/>
           <Property Name="Top" Value="148"/>
-          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.pwm_value]"/>
+          <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.PWM]"/>
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="46"/>
-        </Control>
-        <Control ClassId="0x00001004" Name="Text_8">
-          <Property Name="AlignmentVertical" Value="Center"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="Height" Value="29"/>
-          <Property Name="Left" Value="188"/>
-          <Property Name="SimulationIndex" Value="0"/>
-          <Property Name="SimulationValue" Value=""/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-          <Property Name="TextDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.StatusString]"/>
-          <Property Name="TextSource" Value="SingleString"/>
-          <Property Name="Top" Value="39"/>
-          <Property Name="Width" Value="117"/>
-        </Control>
-        <Control ClassId="0x00001002" Name="Button_4">
-          <Property Name="AlignmentHorizontal" Value="Center"/>
-          <Property Name="BitmapIndexDatapoint" Value="None"/>
-          <Property Name="BitmapSource" Value="None"/>
-          <Property Name="ControlID" Value="0"/>
-          <Property Name="Description" Value=""/>
-          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4]"/>
-          <Property Name="Font" Value="Source[local].Font[Arial9pxBold]"/>
-          <Property Name="Height" Value="38"/>
-          <Property Name="KeyMatrixOffset" Value="None"/>
-          <Property Name="Left" Value="105"/>
-          <Property Name="Multiline" Value="Automatic"/>
-          <Property Name="PressedBackColor" Value="254"/>
-          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
-          <Property Name="PressedForeColor" Value="15"/>
-          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
-          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
-          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
-          <Property Name="TextIndex" Value="13"/>
-          <Property Name="TextIndexDatapoint" Value="None"/>
-          <Property Name="TextSimulationValue" Value="0"/>
-          <Property Name="TextSource" Value="SingleText"/>
-          <Property Name="Top" Value="196"/>
-          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4]"/>
-          <Property Name="Width" Value="84"/>
         </Control>
         <Control ClassId="0x00001007" Name="Numeric_1">
           <Property Name="AlignmentHorizontal" Value="Left"/>
@@ -450,6 +356,56 @@
           <Property Name="ValueMode" Value="Standard"/>
           <Property Name="Width" Value="35"/>
         </Control>
+        <Control ClassId="0x00001002" Name="Button_4">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4]"/>
+          <Property Name="Font" Value="Source[local].Font[Arial9pxBold]"/>
+          <Property Name="Height" Value="56"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="198"/>
+          <Property Name="Multiline" Value="Automatic"/>
+          <Property Name="PressedBackColor" Value="254"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedForeColor" Value="15"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="16"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="177"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_4]"/>
+          <Property Name="Width" Value="110"/>
+        </Control>
+        <Control ClassId="0x00001002" Name="Button_5">
+          <Property Name="AlignmentHorizontal" Value="Center"/>
+          <Property Name="BitmapIndexDatapoint" Value="None"/>
+          <Property Name="BitmapSource" Value="None"/>
+          <Property Name="ControlID" Value="0"/>
+          <Property Name="Description" Value=""/>
+          <Property Name="EmbVirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
+          <Property Name="Font" Value="Source[local].Font[Arial9pxBold]"/>
+          <Property Name="Height" Value="37"/>
+          <Property Name="KeyMatrixOffset" Value="None"/>
+          <Property Name="Left" Value="9"/>
+          <Property Name="Multiline" Value="Automatic"/>
+          <Property Name="PressedBitmapSource" Value="Source[embedded].Property[BitmapSource]"/>
+          <Property Name="PressedTextSource" Value="Source[embedded].Property[TextSource]"/>
+          <Property Name="StyleClass" Value="Source[relative:StyleGroup].StyleClass[Empty]"/>
+          <Property Name="TextGroup" Value="Source[embedded].TextGroup"/>
+          <Property Name="TextIndex" Value="11"/>
+          <Property Name="TextIndexDatapoint" Value="None"/>
+          <Property Name="TextSimulationValue" Value="0"/>
+          <Property Name="TextSource" Value="SingleText"/>
+          <Property Name="Top" Value="196"/>
+          <Property Name="VirtualKey" Value="Source[local].VirtualKey[%embVirtualKey_11]"/>
+          <Property Name="Width" Value="89"/>
+        </Control>
       </Controls>
       <KeyMapping>
         <VirtualKey Name="key_coil_enable">
@@ -464,7 +420,7 @@
               <Property Name="Name" Value="Action_0"/>
               <Property Name="ResetValue" Value="0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.coil_powered]"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.CoilPowered]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -542,15 +498,14 @@
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
           <KeyActions>
-            <KeyAction ClassId="0x0000016A">
+            <KeyAction ClassId="0x00000161">
               <Property Name="CompletionDatapoint" Value="None"/>
               <Property Name="CompletionValue" Value="0"/>
               <Property Name="Description" Value=""/>
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
-              <Property Name="ResetValue" Value="0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceStop]"/>
+              <Property Name="SetValue" Value="0"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.State]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>
@@ -614,6 +569,54 @@
             </KeyAction>
           </KeyActions>
         </VirtualKey>
+        <VirtualKey Name="key_switchA">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016A">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceSwitchA]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_1">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016A">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.ForceSwitchB]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
+        <VirtualKey Name="%embVirtualKey_4">
+          <Property Name="Description" Value=""/>
+          <Property Name="VirtualKey_LED" Value="False"/>
+          <KeyActions>
+            <KeyAction ClassId="0x0000016A">
+              <Property Name="CompletionDatapoint" Value="None"/>
+              <Property Name="CompletionValue" Value="0"/>
+              <Property Name="Description" Value=""/>
+              <Property Name="Locking" Value="Never"/>
+              <Property Name="Name" Value="Action_0"/>
+              <Property Name="ResetValue" Value="0"/>
+              <Property Name="SetValue" Value="1"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.Manual]"/>
+            </KeyAction>
+          </KeyActions>
+        </VirtualKey>
         <VirtualKey Name="%embVirtualKey_11">
           <Property Name="Description" Value=""/>
           <Property Name="VirtualKey_LED" Value="False"/>
@@ -625,52 +628,7 @@
               <Property Name="Locking" Value="Never"/>
               <Property Name="Name" Value="Action_0"/>
               <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.state]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="key_switchA">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000161">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.endswitch_a_reached]"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_1">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000161">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="None"/>
-            </KeyAction>
-          </KeyActions>
-        </VirtualKey>
-        <VirtualKey Name="%embVirtualKey_4">
-          <Property Name="Description" Value=""/>
-          <Property Name="VirtualKey_LED" Value="False"/>
-          <KeyActions>
-            <KeyAction ClassId="0x00000161">
-              <Property Name="CompletionDatapoint" Value="None"/>
-              <Property Name="CompletionValue" Value="0"/>
-              <Property Name="Description" Value=""/>
-              <Property Name="Locking" Value="Never"/>
-              <Property Name="Name" Value="Action_0"/>
-              <Property Name="SetValue" Value="1"/>
-              <Property Name="ValueDatapoint" Value="None"/>
+              <Property Name="ValueDatapoint" Value="Source[global].Variable[DataSource.SDCAxisCtrlX.axis_X.UserResetCounter]"/>
             </KeyAction>
           </KeyActions>
         </VirtualKey>

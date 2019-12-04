@@ -151,10 +151,10 @@
         <Group ID="parameter">
           <Parameter ID="v_pos" Value="5000" />
           <Parameter ID="v_neg" Value="5000" />
-          <Parameter ID="a1_pos" Value="50000" />
-          <Parameter ID="a2_pos" Value="50000" />
-          <Parameter ID="a1_neg" Value="50000" />
-          <Parameter ID="a2_neg" Value="50000" />
+          <Parameter ID="a1_pos" Value="10000.0" />
+          <Parameter ID="a2_pos" Value="10000.0" />
+          <Parameter ID="a1_neg" Value="10000.0" />
+          <Parameter ID="a2_neg" Value="10000.0" />
         </Group>
       </Group>
     </Group>

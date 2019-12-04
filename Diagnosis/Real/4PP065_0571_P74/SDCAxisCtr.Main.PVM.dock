@@ -1,38 +1,77 @@
 WATCH Ver=2.00 PLCName=PLC1 CPUName=CPU TaskName=SDCAxisCtr 
-Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index=25 ASCIIString=0
+Position X=0 Y=0 Width=0 Height=0 TabWidth Name=150 Type=0 Scope=0 Force=0 Index=4 ASCIIString=0
                                     name                                     type force                                                            value level type len format place expand specs
-                            fb_regulator                             FB_Regulator    0 "                                                               *"    0   24    1    0    1    1         
-                                       e                                     REAL    0 "                                                  -0.00023651123"    1    8    1   10    0    0         
-                                  e_prev                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
-                                       u                                     REAL    0 "                                                     -11.0399437"    1    8    1   10    0    0         
-                                   u_raw                                     REAL    0 "                                                     -11.0399437"    1    8    1   10    0    0         
-                                     k_p                                     REAL    0 "                                                          0.0001"    1    8    1   10    0    0         
-                                     k_i                                     REAL    0 "                                                             1.0"    1    8    1   10    0    0         
-                              integrator                            FB_Integrator    0 "                                                               *"    1   24    1    0    0    1         
-                                      in                                     REAL    0 "                                                  -0.00023651123"    2    8    1   10    0    0         
-                                     out                                     REAL    0 "                                                     -11.0399437"    2    8    1   10    0    0         
-                                      dt                                     REAL    0 "                                                           0.002"    2    8    1   10    0    0         
-                                  direct                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
-                                   iyOld                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
-                           max_abs_value                                     REAL    0 "                                                            24.0"    1    8    1   10    0    0         
+                            Axis_X_DrvIf                           SdcDrvIf16_typ    0 "                                                               *"    0   24    1    0    0    1         
+                                iLifeCnt                                     SINT    0 "                                                             126"    1    2    1   10    0    0         
+                                  iDrvOK                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                                oSetTime                                      INT    0 "                                                           20865"    1    3    1   10    0    0         
+                                 oSetPos                                      INT    0 "                                                               0"    1    3    1   10    0    0         
+                           oBoostCurrent                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                      oStandStillCurrent                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                           iStatusEnable                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                                  oBrake                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                 reserve                               BOOL[0..1]    0 "                                                               *"    1    1    2    0    0    1         
+                              reserve[0]                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
+                              reserve[1]                                     BOOL    0 "                                                           FALSE"    2    1    1    2    0    0         
                                   axis_X                                  FB_Axis    0 "                                                               *"    0   24    1    0    1    1         
-                                       u                                     REAL    0 "                                                     -11.0399437"    1    8    1   10    0    0         
-                               UserSpeed                                      INT    0 "                                                             -46"    1    3    1   10    0    0         
-                     endswitch_a_reached                                     BOOL    2 "                                                            TRUE"    1    1    1    2    0    0         
-                     endswitch_b_reached                                     BOOL    2 "                                                           FALSE"    1    1    1    2    0    0         
-                             reset_error                                     BOOL    3 "                                                           FALSE"    1    1    1    2    0    0         
-                           reset_counter                                     BOOL    3 "                                                           FALSE"    1    1    1    2    0    0         
-                               pwm_value                                      INT    3 "                                                          -15073"    1    3    1   10    0    0         
-                                 counter                                      INT    1 "                                                               0"    1    3    1   10    0    0         
-                           FeedbackSpeed                                     REAL    0 "                                                     -45.9997635"    1    8    1   10    0    0         
-                                SetSpeed                                      INT    0 "                                                             -46"    1    3    1   10    0    0         
-                                   state                                     DINT    0 "                                                               2"    1    4    1   10    0    0 e,0,STOP
+                                       U                                     REAL    0 "                                                    7.006492E-45"    1    8    1   10    0    0         
+                               UserSpeed                                      INT    0 "                                                               0"    1    3    1   10    0    0         
+                              EndSwitchA                                     BOOL    1 "                                                           FALSE"    1    1    1    2    0    0         
+                              EndSwitchB                                     BOOL    1 "                                                            TRUE"    1    1    1    2    0    0         
+                            ForceSwitchA                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                            ForceSwitchB                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                                 Counter                                      INT    1 "                                                               0"    1    3    1   10    0    0         
+                                SetSpeed                                      INT    0 "                                                               0"    1    3    1   10    0    0         
+                           FeedbackSpeed                                     REAL    0 "                                                    1.897358E-42"    1    8    1   10    0    0         
+                                     PWM                                      INT    3 "                                                               0"    1    3    1   10    0    0         
+                              ResetError                                     BOOL    3 "                                                            TRUE"    1    1    1    2    0    0         
+                            ResetCounter                                     BOOL    3 "                                                           FALSE"    1    1    1    2    0    0         
+                                   State                                     DINT    0 "                                                               0"    1    4    1   10    0    0 e,0,STOP
 
-                              prev_state                                     DINT    0 "                                                               2"    1    4    1   10    0    0 e,0,STOP
+                               PrevState                                     DINT    0 "                                                               0"    1    4    1   10    0    0 e,0,STOP
 
-                            StatusString                               STRING[80]    0 "                                             'Состояние: MOVING'"    1    9   81    1    0    0         
-                                MaxSpeed                                     UINT    0 "                                                             100"    1    6    1   10    0    0         
-                              Referenced                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
-                              RefSwitchA                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
-                            last_counter                                      INT    0 "                                                               0"    1    3    1   10    0    0         
-                            coil_powered                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
+                            StatusString                               STRING[80]    0 "                                                   'State: STOP'"    1    9   81    1    0    0         
+                                MaxSpeed                                     UINT    0 "                                                            6500"    1    6    1   10    0    0         
+                              Referenced                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                               RefSwitch                                     BOOL    0 "                                                           FALSE"    1    1    1    2    0    0         
+                            RefDirection                                     BOOL    0 "                                                            TRUE"    1    1    1    2    0    0         
+                             CoilPowered                                     BOOL    0 "                                                            TRUE"    0    1    1    2    1    0         
+                            fb_regulator                             FB_Regulator    0 "                                                               *"    0   24    1    0    1    1         
+                                       e                                     REAL    0 "                                                   -1.897358E-42"    1    8    1   10    0    0         
+                                  e_prev                                     REAL    0 "                                                             0.0"    1    8    1   10    0    0         
+                                       u                                     REAL    0 "                                                    7.006492E-45"    1    8    1   10    0    0         
+                                   u_raw                                     REAL    0 "                                                    7.006492E-45"    1    8    1   10    0    0         
+                                     k_p                                     REAL    0 "                                                          0.0001"    1    8    1   10    0    0         
+                                     k_i                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                              integrator                            FB_Integrator    0 "                                                               *"    1   24    1    0    0    1         
+                                      in                                     REAL    0 "                                                               *"    2    8    1   10    0    0         
+                                     out                                     REAL    0 "                                                               *"    2    8    1   10    0    0         
+                                      dt                                     REAL    0 "                                                               *"    2    8    1   10    0    0         
+                                  direct                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                                   iyOld                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                           max_abs_value                                     REAL    0 "                                                               *"    1    8    1   10    0    0         
+                            Axis_X_EncIf                           SdcEncIf16_typ    0 "                                                               *"    0   24    1    0    0    1         
+                                iLifeCnt                                     SINT    0 "                                                               *"    1    2    1   10    0    0         
+                                  iEncOK                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                iActTime                                      INT    0 "                                                               *"    1    3    1   10    0    0         
+                                 iActPos                                      INT    0 "                                                               *"    1    3    1   10    0    0         
+                            iRefPulsePos                                      INT    0 "                                                               *"    1    3    1   10    0    0         
+                            iRefPulseCnt                                     SINT    0 "                                                               *"    1    2    1   10    0    0         
+                                 reserve                               BOOL[0..2]    0 "                                                               *"    1    1    3    0    0    1         
+                              reserve[0]                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              reserve[1]                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              reserve[2]                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                           Axis_X_DiDoIf                            SdcDiDoIf_typ    0 "                                                               *"    0   24    1    0    0    1         
+                      iLifeCntDriveReady                                     SINT    0 "                                                               *"    1    2    1   10    0    0         
+                        iLifeCntPosHwEnd                                     SINT    0 "                                                               *"    1    2    1   10    0    0         
+                        iLifeCntNegHwEnd                                     SINT    0 "                                                               *"    1    2    1   10    0    0         
+                       iLifeCntReference                                     SINT    0 "                                                               *"    1    2    1   10    0    0         
+                     iLifeCntDriveEnable                                     SINT    0 "                                                               *"    1    2    1   10    0    0         
+                             iDriveReady                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                               iPosHwEnd                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                               iNegHwEnd                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                              iReference                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                            oDriveEnable                                     BOOL    0 "                                                               *"    1    1    1    2    0    0         
+                                 reserve                               BOOL[0..1]    0 "                                                               *"    1    1    2    0    0    1         
+                              reserve[0]                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         
+                              reserve[1]                                     BOOL    0 "                                                               *"    2    1    1    2    0    0         

@@ -7,8 +7,8 @@
         <Object Name="DataSource" ClsId="0x200" Version="1" Type="DS" RefString="Source[global].DataSource[DataSource]">
           <Reference Name="DriverID" Type="DS">Source[global].DataSource[DataSource]</Reference>
           <Reference Name="TextGroup" Type="TG">None</Reference>
-          <UInt32 Name="PVCount">13</UInt32>
-          <UInt32 Name="ImageSize">103</UInt32>
+          <UInt32 Name="PVCount">15</UInt32>
+          <UInt32 Name="ImageSize">25</UInt32>
           <Table Name="Variables" Cols="5">
             <TableHeader>
               <Column Name="PVID" />
@@ -17,125 +17,143 @@
               <Column Name="PVDim" />
               <Column Name="PVName" />
             </TableHeader>
-            <Group Name="SDCAxisCtr:axis_X.counter">
+            <Group Name="SDCAxisCtr:axis_X.endswitch_a_reached">
               <UInt16 Name="ID">0</UInt16>
-              <UInt16 Name="PVType">2</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
               <UInt32 Name="PVOffset">0</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">-32768</Double>
-              <Double Name="PVMaxVal">32767</Double>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
               <Int32 Name="Offset">0</Int32>
             </Group>
-            <Group Name="SDCAxisCtr:axis_X.ForceStop">
-              <UInt16 Name="ID">1</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">2</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">26</Int32>
-            </Group>
-            <Group Name="SDCAxisCtr:axis_X.endswitch_a_reached">
-              <UInt16 Name="ID">2</UInt16>
-              <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">3</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">54</Int32>
-            </Group>
-            <Group Name="SDCAxisCtr:axis_X.pwm_value">
-              <UInt16 Name="ID">3</UInt16>
-              <UInt16 Name="PVType">2</UInt16>
-              <UInt32 Name="PVOffset">4</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">-32768</Double>
-              <Double Name="PVMaxVal">32767</Double>
-              <Int32 Name="Offset">92</Int32>
-            </Group>
-            <Group Name="SDCAxisCtr:axis_X.state">
-              <UInt16 Name="ID">4</UInt16>
-              <UInt16 Name="PVType">4</UInt16>
-              <UInt32 Name="PVOffset">6</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">-2147483648</Double>
-              <Double Name="PVMaxVal">2147483647</Double>
-              <Int32 Name="Offset">120</Int32>
-            </Group>
             <Group Name="SDCAxisCtr:axis_X.UserSpeed">
-              <UInt16 Name="ID">5</UInt16>
+              <UInt16 Name="ID">1</UInt16>
               <UInt16 Name="PVType">2</UInt16>
-              <UInt32 Name="PVOffset">10</UInt32>
+              <UInt32 Name="PVOffset">1</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-32768</Double>
               <Double Name="PVMaxVal">32767</Double>
-              <Int32 Name="Offset">144</Int32>
-            </Group>
-            <Group Name="SDCAxisCtr:axis_X.StatusString">
-              <UInt16 Name="ID">6</UInt16>
-              <UInt16 Name="PVType">8</UInt16>
-              <UInt32 Name="PVOffset">12</UInt32>
-              <UInt32 Name="PVDim">1</UInt32>
-              <Double Name="PVMinVal">0</Double>
-              <Double Name="PVMaxVal">0</Double>
-              <Int32 Name="Offset">172</Int32>
+              <Int32 Name="Offset">38</Int32>
             </Group>
             <Group Name="SDCAxisCtr:axis_X.FeedbackSpeed">
-              <UInt16 Name="ID">7</UInt16>
+              <UInt16 Name="ID">2</UInt16>
               <UInt16 Name="PVType">6</UInt16>
-              <UInt32 Name="PVOffset">93</UInt32>
+              <UInt32 Name="PVOffset">3</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-3.4028234663852886E+38</Double>
               <Double Name="PVMaxVal">3.4028234663852886E+38</Double>
-              <Int32 Name="Offset">203</Int32>
+              <Int32 Name="Offset">66</Int32>
             </Group>
-            <Group Name="SDCAxisCtr:coil_powered">
-              <UInt16 Name="ID">8</UInt16>
+            <Group Name="SDCAxisCtr:axis_X.ForceSwitchA">
+              <UInt16 Name="ID">3</UInt16>
               <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">97</UInt32>
+              <UInt32 Name="PVOffset">7</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">235</Int32>
+              <Int32 Name="Offset">98</Int32>
             </Group>
-            <Group Name="Main:reset_error">
-              <UInt16 Name="ID">9</UInt16>
+            <Group Name="SDCAxisCtr:axis_X.ForceSwitchB">
+              <UInt16 Name="ID">4</UInt16>
               <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">98</UInt32>
+              <UInt32 Name="PVOffset">8</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">259</Int32>
+              <Int32 Name="Offset">129</Int32>
             </Group>
-            <Group Name="Main:pwm_field_color">
-              <UInt16 Name="ID">10</UInt16>
+            <Group Name="SDCAxisCtr:axis_X.PWM">
+              <UInt16 Name="ID">5</UInt16>
               <UInt16 Name="PVType">2</UInt16>
-              <UInt32 Name="PVOffset">99</UInt32>
+              <UInt32 Name="PVOffset">9</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">-32768</Double>
               <Double Name="PVMaxVal">32767</Double>
-              <Int32 Name="Offset">276</Int32>
+              <Int32 Name="Offset">160</Int32>
             </Group>
-            <Group Name="Axis_X_DiDoIf.iReference">
-              <UInt16 Name="ID">11</UInt16>
+            <Group Name="SDCAxisCtr:axis_X.Counter">
+              <UInt16 Name="ID">6</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">11</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">182</Int32>
+            </Group>
+            <Group Name="SDCAxisCtr:axis_X.State">
+              <UInt16 Name="ID">7</UInt16>
+              <UInt16 Name="PVType">4</UInt16>
+              <UInt32 Name="PVOffset">13</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-2147483648</Double>
+              <Double Name="PVMaxVal">2147483647</Double>
+              <Int32 Name="Offset">208</Int32>
+            </Group>
+            <Group Name="SDCAxisCtr:axis_X.Manual">
+              <UInt16 Name="ID">8</UInt16>
               <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">101</UInt32>
+              <UInt32 Name="PVOffset">17</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">1</Double>
-              <Int32 Name="Offset">297</Int32>
+              <Int32 Name="Offset">232</Int32>
             </Group>
-            <Group Name="path">
-              <UInt16 Name="ID">12</UInt16>
+            <Group Name="SDCAxisCtr:axis_X.UserResetCounter">
+              <UInt16 Name="ID">9</UInt16>
               <UInt16 Name="PVType">1</UInt16>
-              <UInt32 Name="PVOffset">102</UInt32>
+              <UInt32 Name="PVOffset">18</UInt32>
               <UInt32 Name="PVDim">1</UInt32>
               <Double Name="PVMinVal">0</Double>
               <Double Name="PVMaxVal">255</Double>
-              <Int32 Name="Offset">322</Int32>
+              <Int32 Name="Offset">257</Int32>
+            </Group>
+            <Group Name="SDCAxisCtr:CoilPowered">
+              <UInt16 Name="ID">10</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">19</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">292</Int32>
+            </Group>
+            <Group Name="Main:reset_error">
+              <UInt16 Name="ID">11</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">20</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">315</Int32>
+            </Group>
+            <Group Name="Main:pwm_field_color">
+              <UInt16 Name="ID">12</UInt16>
+              <UInt16 Name="PVType">2</UInt16>
+              <UInt32 Name="PVOffset">21</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">-32768</Double>
+              <Double Name="PVMaxVal">32767</Double>
+              <Int32 Name="Offset">332</Int32>
+            </Group>
+            <Group Name="Axis_X_DiDoIf.iReference">
+              <UInt16 Name="ID">13</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">23</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">1</Double>
+              <Int32 Name="Offset">353</Int32>
+            </Group>
+            <Group Name="path">
+              <UInt16 Name="ID">14</UInt16>
+              <UInt16 Name="PVType">1</UInt16>
+              <UInt32 Name="PVOffset">24</UInt32>
+              <UInt32 Name="PVDim">1</UInt32>
+              <Double Name="PVMinVal">0</Double>
+              <Double Name="PVMaxVal">255</Double>
+              <Int32 Name="Offset">378</Int32>
             </Group>
           </Table>
-          <Binary Name="Name" Encoding="Base64">U0RDQXhpc0N0cjpheGlzX1guY291bnRlcgBTRENBeGlzQ3RyOmF4aXNfWC5Gb3JjZVN0b3AAU0RDQXhpc0N0cjpheGlzX1guZW5kc3dpdGNoX2FfcmVhY2hlZABTRENBeGlzQ3RyOmF4aXNfWC5wd21fdmFsdWUAU0RDQXhpc0N0cjpheGlzX1guc3RhdGUAU0RDQXhpc0N0cjpheGlzX1guVXNlclNwZWVkAFNEQ0F4aXNDdHI6YXhpc19YLlN0YXR1c1N0cmluZwBTRENBeGlzQ3RyOmF4aXNfWC5GZWVkYmFja1NwZWVkAFNEQ0F4aXNDdHI6Y29pbF9wb3dlcmVkAE1haW46cmVzZXRfZXJyb3IATWFpbjpwd21fZmllbGRfY29sb3IAQXhpc19YX0RpRG9JZi5pUmVmZXJlbmNlAHBhdGgA</Binary>
+          <Binary Name="Name" Encoding="Base64">U0RDQXhpc0N0cjpheGlzX1guZW5kc3dpdGNoX2FfcmVhY2hlZABTRENBeGlzQ3RyOmF4aXNfWC5Vc2VyU3BlZWQAU0RDQXhpc0N0cjpheGlzX1guRmVlZGJhY2tTcGVlZABTRENBeGlzQ3RyOmF4aXNfWC5Gb3JjZVN3aXRjaEEAU0RDQXhpc0N0cjpheGlzX1guRm9yY2VTd2l0Y2hCAFNEQ0F4aXNDdHI6YXhpc19YLlBXTQBTRENBeGlzQ3RyOmF4aXNfWC5Db3VudGVyAFNEQ0F4aXNDdHI6YXhpc19YLlN0YXRlAFNEQ0F4aXNDdHI6YXhpc19YLk1hbnVhbABTRENBeGlzQ3RyOmF4aXNfWC5Vc2VyUmVzZXRDb3VudGVyAFNEQ0F4aXNDdHI6Q29pbFBvd2VyZWQATWFpbjpyZXNldF9lcnJvcgBNYWluOnB3bV9maWVsZF9jb2xvcgBBeGlzX1hfRGlEb0lmLmlSZWZlcmVuY2UAcGF0aAA=</Binary>
         </Object>
       </Folder>
     </Folder>

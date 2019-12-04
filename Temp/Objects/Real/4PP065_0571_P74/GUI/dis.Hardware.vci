@@ -4,10 +4,10 @@
     <PanelItems />
     <Property Name="Type" Value="4PP065.0571-P74" />
     <Property Name="NumLevel" Value="0" />
-    <Property Name="IsLocal" Value="False" />
+    <Property Name="IsLocal" Value="True" />
     <Property Name="IsTerminal" Value="False" />
     <Property Name="IsVncSlave" Value="False" />
-    <Property Name="IsVncOnly" Value="True" />
+    <Property Name="IsVncOnly" Value="False" />
     <Property Name="DataModule" Value="" />
     <Property Name="TerminalIP" Value="0.0.0.0" />
     <Property Name="TerminalGW" Value="0.0.0.0" />
@@ -280,37 +280,24 @@
       <PaletteColor Index="255" Value="#7A7A7A" />
     </Palette>
     <Drivers>
-      <Driver Name="vcpdvnc.br">
-        <Property Name="ClassID" Value="" />
+      <Driver Name="vcpdpp30.br">
+        <Property Name="ClassID" Value="0x216" />
         <Property Name="Interface" Value="IF2" />
         <Property Name="BitsPerPixel" Value="8" />
         <Property Name="VerticalResolution" Value="240" />
         <Property Name="HorizontalResolution" Value="320" />
         <Property Name="VerticalRefreshRate" Value="60" />
         <Property Name="Rotation" Value="0" />
-        <Property Name="Authentication" Value="False" />
-        <Property Name="Password" Value="" />
-        <Property Name="ReadOnlyPassword" Value="" />
-        <Property Name="MaxClients" Value="0" />
-        <Property Name="Title" Value="" />
-        <Property Name="Timeout" Value="0" />
-        <Property Name="NodeNumber" Value="0" />
       </Driver>
-      <Driver Name="vcpdsw.br">
-        <Property Name="ClassID" Value="" />
+      <Driver Name="vcptelo.br">
+        <Property Name="ClassID" Value="0x20A" />
         <Property Name="Interface" Value="IF2" />
-        <Property Name="BitsPerPixel" Value="8" />
-        <Property Name="VerticalResolution" Value="240" />
-        <Property Name="HorizontalResolution" Value="320" />
-        <Property Name="VerticalRefreshRate" Value="60" />
         <Property Name="Rotation" Value="0" />
-        <Property Name="Authentication" Value="False" />
-        <Property Name="Password" Value="" />
-        <Property Name="ReadOnlyPassword" Value="" />
-        <Property Name="MaxClients" Value="1" />
-        <Property Name="Title" Value="" />
-        <Property Name="Timeout" Value="4" />
-        <Property Name="NodeNumber" Value="1" />
+        <Property Name="DisplayX" Value="320" />
+        <Property Name="DisplayY" Value="240" />
+        <Property Name="MirrorY" Value="False" />
+        <Property Name="MirrorX" Value="False" />
+        <Property Name="EnableMultitouch" Value="False" />
       </Driver>
     </Drivers>
   </PanelMap>

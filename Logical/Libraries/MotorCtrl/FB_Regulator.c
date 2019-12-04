@@ -17,8 +17,7 @@ void FB_Regulator(struct FB_Regulator* inst)
 	else
 		inst->integrator.in = inst->k_i * inst->e + inst->iyOld / inst->integrator.dt;
 	FB_Integrator(&inst->integrator);
-	inst->u_raw = (fabs(inst->k_p * inst->e) < inst->max_abs_value ? inst->k_p * inst->e : inst->max_abs_value * copysign(1.0, inst->k_p * inst->e)) +
-		inst->integrator.out;
+	inst->u_raw = (fabs(inst->k_p * inst->e) < inst->max_abs_value ? inst->k_p * inst->e : inst->max_abs_value * copysign(1.0, inst->k_p * inst->e)) + inst->integrator.out;
 	inst->u = fabs(inst->u_raw) < inst->max_abs_value ? inst->u_raw : inst->max_abs_value * copysign(1.0, inst->u_raw);
 	inst->iyOld = inst->u - inst->u_raw;
 }

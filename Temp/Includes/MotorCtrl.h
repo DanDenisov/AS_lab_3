@@ -68,28 +68,25 @@ typedef struct FB_Motor
 typedef struct FB_Axis
 {
 	/* VAR_INPUT (analog) */
-	float u;
+	float U;
 	signed short UserSpeed;
+	signed short Counter;
+	unsigned char UserResetCounter;
 	/* VAR_OUTPUT (analog) */
-	signed short pwm_value;
-	signed short counter;
 	float FeedbackSpeed;
-	signed short SetSpeed;
+	signed short PWM;
 	/* VAR (analog) */
-	enum AxisStates state;
-	enum AxisStates prev_state;
-	plcstring StatusString[81];
 	unsigned short MaxSpeed;
-	signed short last_counter;
 	/* VAR_INPUT (digital) */
-	plcbit endswitch_a_reached;
-	plcbit endswitch_b_reached;
+	plcbit EndSwitchA;
+	plcbit EndSwitchB;
+	plcbit ForceSwitchA;
+	plcbit ForceSwitchB;
 	/* VAR_OUTPUT (digital) */
-	plcbit reset_error;
-	plcbit reset_counter;
+	plcbit ResetError;
+	plcbit ResetCounter;
 	/* VAR (digital) */
-	plcbit Referenced;
-	plcbit RefSwitchA;
+	plcbit Manual;
 } FB_Axis_typ;
 
 
